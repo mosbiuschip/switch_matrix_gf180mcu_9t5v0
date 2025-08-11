@@ -6,13 +6,13 @@ S {}
 E {}
 B 2 467.5 90 1643.75 1235 {flags=graph
 y1=0
-ypos1=2.8096028
-ypos2=6.809603
+ypos1=4.05
+ypos2=6.75
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.1e-06
+x2=3.5e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -71,10 +71,8 @@ with no internal buffering in the current (simple) implementation
 
 The data_in does not need buffers but they have been inserted to
 approx. match the delay (out of an abundance of caution)} 547.5 -360 0 0 0.3 0.3 {}
-T {Cell is not correctly named right now, it is implementing a 5 by 10} 977.5 -85 0 0 0.3 0.3 {}
 N -217.5 42.5 -217.5 72.5 {lab=GND}
-N -217.5 -67.5 -217.5 -17.5 {lab=VSSd}
-N -217.5 -185 -217.5 -125 {lab=VDDd}
+N -217.5 -50 -217.5 -17.5 {lab=VSSd}
 N 271.25 -145 271.25 -141.25 {lab=clock_in}
 N 1305.625 -165.625 1305.625 -165 {lab=D_out}
 N -85 -182.5 5 -182.5 {lab=data}
@@ -110,6 +108,24 @@ N 597.5 -217.5 597.5 -182.5 {lab=#net6}
 N 597.5 -217.5 700 -217.5 {lab=#net6}
 N 597.5 -160 700 -160 {lab=#net4}
 N 597.5 -110 700 -110 {lab=#net2}
+N 271.25 -75 271.25 -50 {lab=VSSd}
+N 271.25 -50 950 -50 {lab=VSSd}
+N 255 -95 271.25 -95 {lab=VDDd}
+N 255 -75 255 -35 {lab=VDDd}
+N 255 -35 925 -35 {lab=VDDd}
+N 925 -95 925 -35 {lab=VDDd}
+N 925 -95 955 -95 {lab=VDDd}
+N 950 -75 950 -50 {lab=VSSd}
+N 950 -75 955 -75 {lab=VSSd}
+N -217.5 -147.5 -217.5 -125 {lab=VDDd}
+N -217.5 -147.5 -162.5 -147.5 {lab=VDDd}
+N -162.5 -147.5 -162.5 -75 {lab=VDDd}
+N -162.5 -75 255 -75 {lab=VDDd}
+N -217.5 -50 271.25 -50 {lab=VSSd}
+N -217.5 -185 -217.5 -147.5 {lab=VDDd}
+N 255 -95 255 -75 {lab=VDDd}
+N -220 -50 -217.5 -50 {lab=VSSd}
+N -217.5 -67.5 -217.5 -50 {lab=VSSd}
 C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
@@ -119,7 +135,7 @@ C {devices/code_shown.sym} -765 541.25 0 0 {name=Simulation only_toplevel=false 
 .control
 
     save all
-    TRAN 0.2n 1100n
+    TRAN 0.2n 350n
     write tb_swmatrix.raw
 
 .endc
@@ -164,7 +180,7 @@ C {noconn.sym} 1407.5 -125 0 1 {name=l5}
 C {netlist.sym} -757.5 237.5 0 0 {name=s1 value="
 .param VDD = 3.3
 
-.global VDDd VSSd
+*.global VDDd VSSd
 
 * clock
 abit [ bit_node ]  input_vector
