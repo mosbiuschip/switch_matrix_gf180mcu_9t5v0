@@ -1,5 +1,9 @@
 # Documentation for the Switch Matrix Design
 
+This is the start of a switch matrix design for MOSbius chips in `gf180mcuD` using the GF 180 9t standard cells. 
+
+Check out [testbenches](../testbenches). 
+
 ## Schematics
 - The schematics are using the standard cell symbols from https://github.com/peterkinget/gf180mcu_fd_sc_mcu9t5v0_symbols.
 
