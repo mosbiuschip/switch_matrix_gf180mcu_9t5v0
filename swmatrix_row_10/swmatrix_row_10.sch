@@ -7,8 +7,7 @@ E {}
 T {This is a 10-stage shift register that controls
 10 transmission gates between the pin and each BUS.
 
-The transmission gates are empty cells but
-with the correct interface.} 25 -153.75 0 0 0.2 0.2 {}
+} 25 -153.75 0 0 0.2 0.2 {}
 N 300 96.25 427.5 96.25 {lab=pin}
 N 300 76.25 427.5 76.25 {lab=BUS[1:10]}
 N -80 -43.75 0 -43.75 {lab=PHI_1}
