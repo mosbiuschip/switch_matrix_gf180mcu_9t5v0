@@ -71,6 +71,11 @@ with no internal buffering in the current (simple) implementation
 
 The data_in does not need buffers but they have been inserted to
 approx. match the delay (out of an abundance of caution)} 547.5 -360 0 0 0.3 0.3 {}
+T {The data and clock still need to be 
+disabled when enable is high} -145 -290 0 0 0.5 0.5 {layer=7}
+T {A Schmitt Trigger still needs to be added 
+between the pads and data and clock
+} -150 -375 0 0 0.5 0.5 {layer=7}
 N -217.5 42.5 -217.5 72.5 {lab=GND}
 N -217.5 -50 -217.5 -17.5 {lab=VSSd}
 N 271.25 -145 271.25 -141.25 {lab=clock_in}
@@ -141,9 +146,9 @@ N -37.5 -40 -37.5 -7.5 {lab=#net8}
 N -37.5 -40 600 -40 {lab=#net8}
 N 600 -50 600 -40 {lab=#net8}
 N 600 -50 700 -50 {lab=#net8}
-C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
+C {devices/vsource.sym} -217.5 12.5 0 0 {name=Vvssd value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
+C {devices/vsource.sym} -217.5 -96.25 0 0 {name=Vvddd value=\{VDD\} savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
 C {devices/code_shown.sym} -765 541.25 0 0 {name=Simulation only_toplevel=false value="
@@ -213,7 +218,7 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -160 0 0 {name=x9 VGND=VS
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -160 0 0 {name=x10 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -217.5 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -217.5 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {devices/vsource.sym} -37.5 22.5 0 0 {name=V3 value=0 savecurrent=false}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -50 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -50 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 910 -80 0 0 {name=p11 sig_type=std_logic lab=enable}
+C {devices/vsource.sym} -37.5 17.5 0 0 {name=Venable value=0 savecurrent=false}
