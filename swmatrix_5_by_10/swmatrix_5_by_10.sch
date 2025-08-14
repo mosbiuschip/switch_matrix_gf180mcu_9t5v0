@@ -19,6 +19,7 @@ N 300 30 360 30 {lab=PIN[1:5]}
 N 300 -10 360 -10 {lab=D_out_row[1:4],D_out}
 N -80 60 0 60 {lab=VDDd}
 N -80 80 0 80 {lab=VSSd}
+N -170 45 -0 45 {lab=enable}
 C {iopin.sym} -260 130 0 0 {name=p1 lab=PIN[1:5]
 
 }
@@ -43,4 +44,6 @@ C {title.sym} -142.5 255 0 0 {name=l2 author="Peter Kinget"}
 C {iopin.sym} -80 60 0 1 {name=p11 lab=VDDd
 }
 C {iopin.sym} -80 80 0 1 {name=p12 lab=VSSd
+}
+C {ipin.sym} -170 45 0 0 {name=p13 lab=enable
 }
