@@ -11,8 +11,8 @@ ypos2=6.75
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3.5e-07
+x1=-1.75e-08
+x2=3.325e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -71,6 +71,11 @@ with no internal buffering in the current (simple) implementation
 
 The data_in does not need buffers but they have been inserted to
 approx. match the delay (out of an abundance of caution)} 547.5 -360 0 0 0.3 0.3 {}
+T {The data and clock still need to be 
+disabled when enable is high} -145 -290 0 0 0.5 0.5 {layer=7}
+T {A Schmitt Trigger still needs to be added 
+between the pads and data and clock
+} -150 -375 0 0 0.5 0.5 {layer=7}
 N -217.5 42.5 -217.5 72.5 {lab=GND}
 N -217.5 -50 -217.5 -17.5 {lab=VSSd}
 N 271.25 -145 271.25 -141.25 {lab=clock_in}
@@ -90,8 +95,6 @@ N 1305.625 -125 1407.5 -125 {lab=PIN[1:5]}
 N 1255 -125 1305.625 -125 {lab=PIN[1:5]}
 N 1305.625 -165 1407.5 -165 {lab=D_out}
 N 780 -110 802.5 -110 {lab=#net1}
-N 882.5 -110 955 -110 {lab=PHI_2}
-N 955 -125 955 -110 {lab=PHI_2}
 N 571.25 -125 597.5 -125 {lab=#net2}
 N 597.5 -125 597.5 -110 {lab=#net2}
 N 780 -160 802.5 -160 {lab=#net3}
@@ -109,26 +112,43 @@ N 597.5 -217.5 700 -217.5 {lab=#net6}
 N 597.5 -160 700 -160 {lab=#net4}
 N 597.5 -110 700 -110 {lab=#net2}
 N 271.25 -75 271.25 -50 {lab=VSSd}
-N 271.25 -50 950 -50 {lab=VSSd}
 N 255 -95 271.25 -95 {lab=VDDd}
-N 255 -75 255 -35 {lab=VDDd}
-N 255 -35 925 -35 {lab=VDDd}
-N 925 -95 925 -35 {lab=VDDd}
+N 255 -75 255 55 {lab=VDDd}
+N 925 -95 925 55 {lab=VDDd}
 N 925 -95 955 -95 {lab=VDDd}
-N 950 -75 950 -50 {lab=VSSd}
+N 950 -75 950 70 {lab=VSSd}
 N 950 -75 955 -75 {lab=VSSd}
 N -217.5 -147.5 -217.5 -125 {lab=VDDd}
 N -217.5 -147.5 -162.5 -147.5 {lab=VDDd}
 N -162.5 -147.5 -162.5 -75 {lab=VDDd}
 N -162.5 -75 255 -75 {lab=VDDd}
-N -217.5 -50 271.25 -50 {lab=VSSd}
 N -217.5 -185 -217.5 -147.5 {lab=VDDd}
 N 255 -95 255 -75 {lab=VDDd}
 N -220 -50 -217.5 -50 {lab=VSSd}
 N -217.5 -67.5 -217.5 -50 {lab=VSSd}
-C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
+N 890 -125 890 -110 {lab=PHI_2}
+N -95 -50 -95 70 {lab=VSSd}
+N -217.5 -50 -95 -50 {lab=VSSd}
+N -37.5 47.5 -37.5 70 {lab=VSSd}
+N -95 70 -37.5 70 {lab=VSSd}
+N 270 -50 270 70 {lab=VSSd}
+N -37.5 70 270 70 {lab=VSSd}
+N 890 -125 955 -125 {lab=PHI_2}
+N 882.5 -110 890 -110 {lab=PHI_2}
+N 910 -110 955 -110 {lab=enable}
+N 910 -110 910 -50 {lab=enable}
+N 270 70 950 70 {lab=VSSd}
+N 255 55 925 55 {lab=VDDd}
+N 270 -50 271.25 -50 {lab=VSSd}
+N 780 -50 802.5 -50 {lab=#net7}
+N 882.5 -50 910 -50 {lab=enable}
+N -37.5 -40 -37.5 -7.5 {lab=#net8}
+N -37.5 -40 600 -40 {lab=#net8}
+N 600 -50 600 -40 {lab=#net8}
+N 600 -50 700 -50 {lab=#net8}
+C {devices/vsource.sym} -217.5 12.5 0 0 {name=Vvssd value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
+C {devices/vsource.sym} -217.5 -96.25 0 0 {name=Vvddd value=\{VDD\} savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
 C {devices/code_shown.sym} -765 541.25 0 0 {name=Simulation only_toplevel=false value="
@@ -147,14 +167,14 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {launcher.sym} 540 40 0 0 {name=h5
+C {launcher.sym} 305 260 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 945 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
-C {lab_wire.sym} 940 -110 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
-C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 421.25 -135 0 0 {name=xNO_ClkGen}
+C {lab_wire.sym} 940 -125 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 421.25 -135.625 0 0 {name=xNO_ClkGen}
 C {lab_wire.sym} 1311.25 -165 0 1 {name=p20 sig_type=std_logic lab=D_out}
 C {lab_wire.sym} -35 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
 }
@@ -198,3 +218,7 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -160 0 0 {name=x9 VGND=VS
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -160 0 0 {name=x10 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -217.5 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -217.5 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -50 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -50 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {lab_wire.sym} 910 -80 0 0 {name=p11 sig_type=std_logic lab=enable}
+C {devices/vsource.sym} -37.5 17.5 0 0 {name=Venable value=0 savecurrent=false}
