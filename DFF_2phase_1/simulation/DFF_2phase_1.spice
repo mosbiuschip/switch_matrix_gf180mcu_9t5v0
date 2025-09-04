@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 Q D PHI_1 gated_control PHI_2 EN VDDd VSSd
+*.PININFO D:I PHI_1:I PHI_2:I Q:O VDDd:B VSSd:B gated_control:O EN:I
+xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+* noconn VSSd
+* noconn VDDd
+x1 net1 gated_control VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 Q EN net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+.ends
