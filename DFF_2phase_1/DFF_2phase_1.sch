@@ -15,9 +15,6 @@ N 220 -20 220 20 {lab=PHI_2}
 N -20 20 220 20 {lab=PHI_2}
 N -20 -20 -20 0 {lab=PHI_1}
 N 430 -40 470 -40 {lab=Q}
-N 20 60 47.5 60 {lab=VDDd}
-N 47.5 58.75 47.5 60 {lab=VDDd}
-N 20 80 47.5 80 {lab=VSSd}
 N 440 -0 460 -0 {lab=Q}
 N 440 -40 440 -0 {lab=Q}
 N -20 40 460 40 {lab=EN}
@@ -33,8 +30,8 @@ C {iopin.sym} 20 60 0 1 {name=p6 lab=VDDd
 }
 C {iopin.sym} 20 80 0 1 {name=p7 lab=VSSd
 }
-C {noconn.sym} 47.5 80 0 1 {name=l1}
-C {noconn.sym} 47.5 60 0 1 {name=l3}
+C {noconn.sym} 20 80 0 1 {name=l1}
+C {noconn.sym} 20 60 0 1 {name=l3}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 620 20 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} 520 20 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {opin.sym} 660 20 0 0 {name=p8 lab=gated_control}
