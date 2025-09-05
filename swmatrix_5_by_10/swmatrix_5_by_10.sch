@@ -26,7 +26,7 @@ C {iopin.sym} -260 130 0 0 {name=p1 lab=PIN[1:5]
 C {iopin.sym} -260 100 0 0 {name=p2 lab=BUS[1:10]
 
 }
-C {switch_matrix_gf180mcu_9t5v0/swmatrix_row_10/swmatrix_row_10.sym} 150 10 0 0 {name=xswmatrix_row[1:5]}
+C {swmatrix_row_10/swmatrix_row_10.sym} 150 10 0 0 {name=xswmatrix_row[1:5]}
 C {ipin.sym} -170 10 0 0 {name=p3 lab=PHI_1
 }
 C {ipin.sym} -170 30 0 0 {name=p4 lab=PHI_2

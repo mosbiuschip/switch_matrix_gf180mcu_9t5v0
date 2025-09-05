@@ -6,13 +6,13 @@ S {}
 E {}
 B 2 375 -42.5 1551.25 1102.5 {flags=graph
 y1=0
-ypos1=0.20960277
-ypos2=4.209603
+ypos1=0
+ypos2=2.7
 divy=5
 subdivy=1
 unity=1
-x1=-1.4944118e-24
-x2=3e-07
+x1=-7e-08
+x2=2.8e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -26,7 +26,7 @@ autoload=1
 digital=1
 sim_type=tran
 rawfile=$netlist_dir/tb_swmatrix.raw
-color="4 5 6 7 8 9 10 11 12 13 14 15 16 17"
+color="4 5 6 7 8 9 10 11 12 13 14 15 16 17 13 13"
 node="clock_in
 phi_1
 phi_2
@@ -40,7 +40,9 @@ xsr.q[6]
 xsr.q[7]
 xsr.q[8]
 xsr.q[9]
-out_sr"
+q[10]
+clock
+data"
 hilight_wave=-1
 xlabmag=0.5
 mode=Line
@@ -61,10 +63,7 @@ N 571.25 -125 616.25 -125 {lab=PHI_2}
 N 571.25 -145 616.25 -145 {lab=PHI_1}
 N 616.25 -145 713.75 -145 {lab=PHI_1}
 N 616.25 -125 713.75 -125 {lab=PHI_2}
-N 271.25 -145 271.25 -141.25 {lab=clock_in}
-N 1063.125 -165.625 1063.125 -165 {lab=out_SR}
-N 1063.125 -165 1073.75 -165 {lab=out_SR}
-N 1013.75 -165 1063.125 -165 {lab=out_SR}
+N 1013.75 -165 1063.125 -165 {lab=Q[1:10]}
 N -85 -182.5 5 -182.5 {lab=data}
 N 75 -182.5 145 -182.5 {lab=datab}
 N 225 -182.5 675 -182.5 {lab=data_in}
@@ -73,37 +72,12 @@ N -85 -110 5 -110 {lab=clock}
 N 75 -110 145 -110 {lab=clockb}
 N 225 -145 225 -110 {lab=clock_in}
 N 225 -145 271.25 -145 {lab=clock_in}
+N 1013.75 -145 1063.125 -145 {lab=gc[1:10]}
 C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
-C {devices/code_shown.sym} -747.5 261.25 0 0 {name=Simulation only_toplevel=false value="
-.param VDD = 3.3
-.param Tbit = 20n
-
-.global VDDd VSSd
-
-* clock
-abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/libs/tb_swmatrix/data_source.text\\")
-* data
-aclock [ clock_node ] clock_vector
-.model clock_vector d_source(input_file=\\"/foss/designs/libs/tb_swmatrix/clock_source.text\\")
-* convert digital signals to analog
-aconvert [ bit_node clock_node ] [ data clock ] dac_in
-.model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
-
-
-
-.control
-
-    save all
-    TRAN 0.2n 300n
-    write tb_ShiftREg_row_10.raw
-
-.endc
-"}
 C {devices/code_shown.sym} -740 -260 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
@@ -111,16 +85,14 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {launcher.sym} 432.5 -75 0 0 {name=h5
+C {launcher.sym} 165 53.75 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_ShiftReg_row_10.raw tran"
+tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
-C {libs/core_swmatrix/ShiftReg_row_10.sym} 863.75 -145 0 0 {name=xSR}
 C {lab_wire.sym} 702.5 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
 C {lab_wire.sym} 697.5 -125 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
-C {libs/core_swmatrix/NO_ClkGen.sym} 421.25 -135 0 0 {name=xNO_ClkGen}
-C {lab_wire.sym} 1073.75 -165 0 0 {name=p20 sig_type=std_logic lab=out_SR}
+C {NO_ClkGen/NO_ClkGen.sym} 421.25 -135 0 0 {name=xNO_ClkGen}
 C {lab_wire.sym} -35 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
 }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 35 -182.5 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
@@ -136,3 +108,35 @@ C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 347.5 -182.5 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
+C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 863.75 -125 0 0 {name=x2}
+C {devices/lab_wire.sym} 713.75 -65 0 0 {name=p10 sig_type=std_logic lab=VSSd}
+C {netlist.sym} -817.5 167.5 0 0 {name=s1 value="
+.param VDD = 3.3
+
+*.global VDDd VSSd
+
+* clock
+abit [ bit_node ]  input_vector
+.model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
+* data
+aclock [ clock_node ] clock_vector
+.model clock_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
+* convert digital signals to analog
+aconvert [ bit_node clock_node ] [ data clock ] dac_in
+.model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
+"}
+C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false value="
+.control
+
+    save all
+    TRAN 0.2n 350n
+    write tb_swmatrix.raw
+
+.endc
+"}
+C {lab_wire.sym} 1041.25 -165 0 1 {name=p9 sig_type=std_logic lab=Q[1:10]}
+C {lab_wire.sym} 1041.25 -145 0 1 {name=p8 sig_type=std_logic lab=gc[1:10]}
+C {devices/lab_wire.sym} 271.25 -95 0 0 {name=p11 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 271.25 -75 0 0 {name=p12 sig_type=std_logic lab=VSSd}
+C {devices/lab_wire.sym} 713.75 -85 0 0 {name=p13 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 713.75 -105 0 0 {name=p14 sig_type=std_logic lab=VSSd}

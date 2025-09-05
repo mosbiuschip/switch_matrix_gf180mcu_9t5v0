@@ -174,7 +174,36 @@ tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 945 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
 C {lab_wire.sym} 940 -125 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
-C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 421.25 -135.625 0 0 {name=xNO_ClkGen}
+C {NO_ClkGen/NO_ClkGen.sym} 421.25 -135.625 0 0 {name=xNO_ClkGenv \{xschem version=3.4.7 file_version=1.2\}
+G \{\}
+K \{type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+\}
+V \{\}
+S \{\}
+E \{\}
+L 4 130 -10 150 -10 \{\}
+L 4 -150 -10 -130 -10 \{\}
+L 4 130 10 150 10 \{\}
+L 4 -150 40 -130 40 \{\}
+L 4 -150 60 -130 60 \{\}
+B 5 147.5 7.5 152.5 12.5 \{name=PHI_2 dir=out\}
+B 5 -152.5 -12.5 -147.5 -7.5 \{name=CLK dir=in\}
+B 5 147.5 -12.5 152.5 -7.5 \{name=PHI_1 dir=out\}
+B 5 -152.5 37.5 -147.5 42.5 \{name=VDDd
+dir=inout\}
+B 5 -152.5 57.5 -147.5 62.5 \{name=VSSd
+dir=inout\}
+P 4 5 130 -20 -130 -20 -130 73.75 130 73.75 130 -20 \{\}
+T \{@symname\} -58.5 -6 0 0 0.3 0.3 \{\}
+T \{@name\} 135 -32 0 0 0.2 0.2 \{\}
+T \{PHI_2\} 125 6 0 1 0.2 0.2 \{\}
+T \{CLK\} -125 -14 0 0 0.2 0.2 \{\}
+T \{PHI_1\} 125 -14 0 1 0.2 0.2 \{\}
+T \{VDDd\} -125 36 0 0 0.2 0.2 \{\}
+T \{VSSd\} -125 56 0 0 0.2 0.2 \{\}
+}
 C {lab_wire.sym} 1311.25 -165 0 1 {name=p20 sig_type=std_logic lab=D_out}
 C {lab_wire.sym} -35 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
 }
@@ -191,7 +220,7 @@ C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 947.5 -165 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_10/swmatrix_5_by_10.sym} 1105 -145 0 0 {name=xSWMATRIX}
+C {swmatrix_5_by_10/swmatrix_5_by_10.sym} 1105 -145 0 0 {name=xSWMATRIX}
 C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:10]}
 C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:5]}
 C {noconn.sym} 1407.5 -165 0 1 {name=l3}
