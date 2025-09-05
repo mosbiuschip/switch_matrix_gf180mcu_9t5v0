@@ -33,6 +33,6 @@ C {iopin.sym} 20 80 0 1 {name=p7 lab=VSSd
 C {noconn.sym} 20 80 0 1 {name=l1}
 C {noconn.sym} 20 60 0 1 {name=l3}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 620 20 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} 520 20 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} 520 20 2 1 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {opin.sym} 660 20 0 0 {name=p8 lab=gated_control}
 C {ipin.sym} -20 40 0 0 {name=p9 lab=EN}
