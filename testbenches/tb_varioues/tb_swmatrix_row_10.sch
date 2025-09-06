@@ -11,8 +11,8 @@ ypos2=3.5
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3.5e-07
+x1=1.75e-08
+x2=3.675e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -105,7 +105,7 @@ C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 240 -252.5 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {netlist.sym} -817.5 167.5 0 0 {name=s1 value="
+C {netlist.sym} -818.75 166.25 0 0 {name=s1 value="
 .param VDD = 3.3
 
 *.global VDDd VSSd
@@ -142,14 +142,14 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 715 -192.5 0 0 {name=x10 VGND
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 795 -192.5 0 0 {name=x11 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 715 -132.5 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 795 -132.5 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {swmatrix_row_10/swmatrix_row_10.sym} 1077.5 -487.5 0 0 {name=x2
-spice_ignore=true}
+C {swmatrix_row_10/swmatrix_row_10.sym} 1173.75 -215 0 0 {name=x2
+spice_ignore=false}
 C {lab_wire.sym} 1333.75 -498.75 0 1 {name=p8 sig_type=std_logic lab=D_out
 spice_ignore=true}
 C {lab_wire.sym} 1333.75 -458.75 0 1 {name=p15 sig_type=std_logic lab=pin
 spice_ignore=true}
-C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 1173.75 -215 0 0 {name=x6
-spice_ignore=false}
+C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 1663.75 -475 0 0 {name=x6
+spice_ignore=true}
 C {lab_wire.sym} 1323.75 -255 0 1 {name=p16 sig_type=std_logic lab=BUS[1:10]
 spice_ignore=false}
 C {lab_wire.sym} 1323.75 -235 0 1 {name=p18 sig_type=std_logic lab=BUS2[1:10]

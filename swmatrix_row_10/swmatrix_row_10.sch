@@ -13,8 +13,8 @@ N -69.375 -150 10.625 -150 {lab=PHI_2}
 N -69.375 -40 10.625 -40 {lab=gc[1:10]}
 N -69.375 -190 10.625 -190 {lab=D_in}
 N 310.625 -190 420.625 -190 {lab=Q[1:9],D_out}
-N -70 -130 10 -130 {lab=enable}
-N 310 -170 390 -170 {lab=#net1}
+N -69.375 -130 10.625 -130 {lab=enable}
+N 310.625 -170 399.375 -170 {lab=gc[1:10]}
 C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 160.625 -150 0 0 {name=xSR}
 C {iopin.sym} 310.625 -10 0 0 {name=p1 lab=pin}
 C {swmatrix_Tgate/swmatrix_Tgate.sym} 160.625 -10 0 0 {name=xTgates[1:10]}
