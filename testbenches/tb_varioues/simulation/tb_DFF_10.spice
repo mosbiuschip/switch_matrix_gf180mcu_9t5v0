@@ -1,14 +1,17 @@
-** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/tb_ShiftReg_row_10.sch
-**.subckt tb_ShiftReg_row_10
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/tb_varioues/tb_DFF_10.sch
+**.subckt tb_DFF_10
 V1 VSSd GND 0
 V2 VDDd VSSd {VDD}
-xNO_ClkGen PHI_2 clock_in PHI_1 VDDd VSSd NO_ClkGen
 x3 data datab VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
-x1 datab data_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x2 datab data_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
 x4 clock clockb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
-x5 clockb clock_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
-x2 data_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10] PHI_1
-+ PHI_2 VDDd VDDd VSSd ShiftReg_row_10_2
+x5 NEN EN VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x6 clockb clock_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x8 VSSd NEN VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x9 data_in q[1] q[2] q[3] q[4] q[5] q[6] q[7] q[8] q[9] q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10]
++ clock_in clockb EN VDDd VSSd ShiftReg_row_10_2
+x1 data_in q2[1] q2[2] q2[3] q2[4] q2[5] q2[6] q2[7] q2[8] q2[9] q2[10] gc2[1] gc2[2] gc2[3] gc2[4] gc2[5] gc2[6] gc2[7] gc2[8]
++ gc2[9] gc2[10] clock_in clockb NEN VDDd VSSd ShiftReg_row_10_2
 **** begin user architecture code
 
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
@@ -38,47 +41,13 @@ aconvert [ bit_node clock_node ] [ data clock ] dac_in
 
     save all
     TRAN 0.2n 350n
-    write tb_shiftreg_row_10.raw
+    write tb_DFF_10.raw
 
 .endc
 
 
 **** end user architecture code
 **.ends
-
-* expanding   symbol:  NO_ClkGen/NO_ClkGen.sym # of pins=5
-** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym
-** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
-.subckt NO_ClkGen PHI_2 CLK PHI_1 VDDd VSSd
-*.ipin CLK
-*.opin PHI_2
-*.opin PHI_1
-*.iopin VDDd
-*.iopin VSSd
-x1 CLKB OUT_bot_d OUT_top VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
-x2 OUT_top_d CLKbuf OUT_bot VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
-x3 OUT_top PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x4 PHI_2 net5 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x5 net3 net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x6 OUT_bot PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x7 PHI_1 net6 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x8 net4 net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x9 CLKB CLKbuf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x10 CLK CLKB VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x11 net5 net3 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x12 net6 net4 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x13 net2 net7 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x15 net1 net8 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x17 net7 net9 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x18 net8 net12 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x14 net9 net10 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x16 net12 net11 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x19 net10 OUT_top_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-x20 net11 OUT_bot_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
-* noconn VDDd
-* noconn VSSd
-.ends
-
 
 * expanding   symbol:  ShiftReg_row_10_2/ShiftReg_row_10_2.sym # of pins=8
 ** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sym

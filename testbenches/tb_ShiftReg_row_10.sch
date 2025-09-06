@@ -11,8 +11,8 @@ ypos2=2.7
 divy=5
 subdivy=1
 unity=1
-x1=-7e-08
-x2=2.8e-07
+x1=0
+x2=3.5e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -26,23 +26,15 @@ autoload=1
 digital=1
 sim_type=tran
 rawfile=$netlist_dir/tb_swmatrix.raw
-color="4 5 6 7 8 9 10 11 12 13 14 15 16 17 13 13"
+color="4 5 6 7 8 10 9 9"
 node="clock_in
 phi_1
 phi_2
 data_in
-xsr.q[1]
-xsr.q[2]
-xsr.q[3]
-xsr.q[4]
-xsr.q[5]
-xsr.q[6]
-xsr.q[7]
-xsr.q[8]
-xsr.q[9]
-q[10]
-clock
-data"
+gc[2]
+q[2]
+gc[10]
+q[10]"
 hilight_wave=-1
 xlabmag=0.5
 mode=Line
@@ -87,7 +79,7 @@ value="
 "}
 C {launcher.sym} 165 53.75 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
+tclcommand="xschem raw_read $netlist_dir/tb_shiftreg_row_10.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 702.5 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
@@ -109,7 +101,6 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VS
 C {lab_wire.sym} 347.5 -182.5 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
 C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 863.75 -125 0 0 {name=x2}
-C {devices/lab_wire.sym} 713.75 -65 0 0 {name=p10 sig_type=std_logic lab=VSSd}
 C {netlist.sym} -817.5 167.5 0 0 {name=s1 value="
 .param VDD = 3.3
 
@@ -130,7 +121,7 @@ C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false
 
     save all
     TRAN 0.2n 350n
-    write tb_swmatrix.raw
+    write tb_shiftreg_row_10.raw
 
 .endc
 "}
@@ -138,5 +129,6 @@ C {lab_wire.sym} 1041.25 -165 0 1 {name=p9 sig_type=std_logic lab=Q[1:10]}
 C {lab_wire.sym} 1041.25 -145 0 1 {name=p8 sig_type=std_logic lab=gc[1:10]}
 C {devices/lab_wire.sym} 271.25 -95 0 0 {name=p11 sig_type=std_logic lab=VDDd}
 C {devices/lab_wire.sym} 271.25 -75 0 0 {name=p12 sig_type=std_logic lab=VSSd}
-C {devices/lab_wire.sym} 713.75 -85 0 0 {name=p13 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 713.75 -105 0 0 {name=p14 sig_type=std_logic lab=VSSd}
+C {devices/lab_wire.sym} 713.75 -65 0 0 {name=p13 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 713.75 -105 0 0 {name=p14 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 713.75 -85 0 0 {name=p10 sig_type=std_logic lab=VSSd}
