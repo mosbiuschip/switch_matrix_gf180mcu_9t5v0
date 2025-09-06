@@ -48,29 +48,36 @@ T {Testing a Shift Register with 10 registers
 N -217.5 42.5 -217.5 72.5 {lab=GND}
 N -217.5 -67.5 -217.5 -17.5 {lab=VSSd}
 N -217.5 -185 -217.5 -125 {lab=VDDd}
-N 675 -165 713.75 -165 {lab=data_in}
-N 616.25 -126.25 616.25 -125 {lab=PHI_2}
-N 616.25 -146.25 616.25 -145 {lab=PHI_1}
-N 571.25 -125 616.25 -125 {lab=PHI_2}
-N 571.25 -145 616.25 -145 {lab=PHI_1}
-N 616.25 -145 713.75 -145 {lab=PHI_1}
-N 616.25 -125 713.75 -125 {lab=PHI_2}
-N 1013.75 -165 1063.125 -165 {lab=Q[1:10]}
-N -85 -182.5 5 -182.5 {lab=data}
-N 75 -182.5 145 -182.5 {lab=datab}
-N 225 -182.5 675 -182.5 {lab=data_in}
-N 675 -182.5 675 -165 {lab=data_in}
+N 985 -255 1023.75 -255 {lab=#net1}
+N 926.25 -235 1023.75 -235 {lab=PHI_1}
+N 926.25 -215 1023.75 -215 {lab=PHI_2}
+N 1323.75 -255 1373.125 -255 {lab=Q[1:10]}
+N -70 -180 20 -180 {lab=data}
+N 90 -180 160 -180 {lab=datab}
 N -85 -110 5 -110 {lab=clock}
 N 75 -110 145 -110 {lab=clockb}
 N 225 -145 225 -110 {lab=clock_in}
 N 225 -145 271.25 -145 {lab=clock_in}
-N 1013.75 -145 1063.125 -145 {lab=gc[1:10]}
+N 1323.75 -235 1373.125 -235 {lab=gc[1:10]}
+N 571.25 -125 675 -125 {lab=#net2}
+N 675 -132.5 675 -125 {lab=#net2}
+N 571.25 -145 675 -145 {lab=#net3}
+N 675 -192.5 675 -145 {lab=#net3}
+N 835 -132.5 926.25 -132.5 {lab=PHI_2}
+N 926.25 -215 926.25 -132.5 {lab=PHI_2}
+N 835 -192.5 903.75 -192.5 {lab=PHI_1}
+N 903.75 -235 903.75 -192.5 {lab=PHI_1}
+N 903.75 -235 926.25 -235 {lab=PHI_1}
+N 835 -255 985 -255 {lab=#net1}
+N 835 -255 835 -252.5 {lab=#net1}
+N 240 -252.5 675 -252.5 {lab=data_in}
+N 240 -252.5 240 -180 {lab=data_in}
 C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
-C {devices/code_shown.sym} -740 -260 0 0 {name=Models only_toplevel=false
+C {devices/code_shown.sym} -760 -380 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
@@ -82,25 +89,25 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_shiftreg_row_10.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
-C {lab_wire.sym} 702.5 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
-C {lab_wire.sym} 697.5 -125 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
+C {lab_wire.sym} 1012.5 -235 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
+C {lab_wire.sym} 1007.5 -215 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
 C {NO_ClkGen/NO_ClkGen.sym} 421.25 -135 0 0 {name=xNO_ClkGen}
-C {lab_wire.sym} -35 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
+C {lab_wire.sym} -20 -180 0 0 {name=p22 sig_type=std_logic lab=data
 }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 35 -182.5 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {lab_wire.sym} 132.5 -182.5 0 0 {name=p23 sig_type=std_logic lab=datab
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 50 -180 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {lab_wire.sym} 147.5 -180 0 0 {name=p23 sig_type=std_logic lab=datab
 
 }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -182.5 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 200 -180 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} -35 -110 0 0 {name=p1 sig_type=std_logic lab=clock}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 35 -110 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 
 }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {lab_wire.sym} 347.5 -182.5 0 0 {name=p5 sig_type=std_logic lab=data_in}
+C {lab_wire.sym} 240 -252.5 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 863.75 -125 0 0 {name=x2}
+C {ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 1173.75 -215 0 0 {name=x2}
 C {netlist.sym} -817.5 167.5 0 0 {name=s1 value="
 .param VDD = 3.3
 
@@ -125,10 +132,16 @@ C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false
 
 .endc
 "}
-C {lab_wire.sym} 1041.25 -165 0 1 {name=p9 sig_type=std_logic lab=Q[1:10]}
-C {lab_wire.sym} 1041.25 -145 0 1 {name=p8 sig_type=std_logic lab=gc[1:10]}
+C {lab_wire.sym} 1351.25 -255 0 1 {name=p9 sig_type=std_logic lab=Q[1:10]}
+C {lab_wire.sym} 1351.25 -235 0 1 {name=p8 sig_type=std_logic lab=gc[1:10]}
 C {devices/lab_wire.sym} 271.25 -95 0 0 {name=p11 sig_type=std_logic lab=VDDd}
 C {devices/lab_wire.sym} 271.25 -75 0 0 {name=p12 sig_type=std_logic lab=VSSd}
-C {devices/lab_wire.sym} 713.75 -65 0 0 {name=p13 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 713.75 -105 0 0 {name=p14 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 713.75 -85 0 0 {name=p10 sig_type=std_logic lab=VSSd}
+C {devices/lab_wire.sym} 1023.75 -155 0 0 {name=p13 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 1023.75 -195 0 0 {name=p14 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 1023.75 -175 0 0 {name=p10 sig_type=std_logic lab=VSSd}
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 715 -252.5 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 795 -252.5 0 0 {name=x9 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 715 -192.5 0 0 {name=x10 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 795 -192.5 0 0 {name=x11 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 715 -132.5 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 795 -132.5 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }

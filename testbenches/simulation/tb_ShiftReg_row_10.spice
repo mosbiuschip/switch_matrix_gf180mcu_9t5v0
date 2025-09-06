@@ -2,13 +2,19 @@
 **.subckt tb_ShiftReg_row_10
 V1 VSSd GND 0
 V2 VDDd VSSd {VDD}
-xNO_ClkGen PHI_2 clock_in PHI_1 VDDd VSSd NO_ClkGen
+xNO_ClkGen net2 clock_in net3 VDDd VSSd NO_ClkGen
 x3 data datab VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
 x1 datab data_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
 x4 clock clockb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
 x5 clockb clock_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
-x2 data_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10] PHI_1
+x2 net1 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10] PHI_1
 + PHI_2 VDDd VDDd VSSd ShiftReg_row_10_2
+x8 data_in net4 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x9 net4 net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x10 net3 net5 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x11 net5 PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x12 net2 net6 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x13 net6 PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
 **** begin user architecture code
 
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
