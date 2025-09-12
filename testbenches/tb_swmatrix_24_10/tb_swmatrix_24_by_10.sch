@@ -12,8 +12,8 @@ ypos2=4.3598282
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1.7e-06
+x1=-4.108333e-08
+x2=6.1673761e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -38,13 +38,13 @@ logy=0
 digital=1}
 B 2 345 7.5 1341.25 742.5 {flags=graph
 y1=-0.11
-ypos1=2.417
-ypos2=6.027
+ypos1=0.082998472
+ypos2=5.3634758
 divy=5
 subdivy=1
 unity=1
-x1=-1.7668973e-06
-x2=4.8013345e-06
+x1=2.328484e-07
+x2=4.4562498e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -62,8 +62,8 @@ xlabmag=0.5
 mode=Line
 y2=3.5
 legend=0
-color="9 6 6 6 6 6 6 6 6 6 6 6"
-node="clock
+color="9 6 6 6 6 6 6 6 6 6 6 6 6 6"
+node="x1.clock
 data
 x1.d_out_row[1]
 x1.d_out_row[2]
@@ -74,57 +74,18 @@ x1.d_out_row[6]
 x1.d_out_row[7]
 x1.d_out_row[8]
 x1.d_out_row[9]
-x1.d_out_row[10]"}
-B 2 1345 7.5 2341.25 742.5 {flags=graph
-y1=-0.11
-ypos1=0.22512002
-ypos2=5.0628653
-divy=5
-subdivy=1
-unity=1
-x1=-1.7668973e-06
-x2=4.8013345e-06
-divx=5
-subdivx=1
-ylabmag=0.5
-dataset=-1
-unitx=1
-logx=0
-logy=0
-linewidth_mult=2.5
-rainbow=0
-autoload=1
-digital=1
-sim_type=tran
-hilight_wave=-1
-xlabmag=0.5
-mode=Line
-y2=3.5
-legend=0
-color="9 6 6 6 6 6 6 6 6 6 6 6 6"
-node="clock_in
-data_in
-
-enable
-x2.gc[1]
-x2.gc[2]
-x2.gc[3]
-x2.gc[4]
-x2.gc[5]
-x2.gc[6]
-x2.gc[7]
-x2.gc[8]
-x2.gc[9]
-x2.gc[10]"}
+x1.d_out_row[10]
+x1.d_out_row[11]
+x1.d_out_row[12]"}
 B 2 346.25 738.75 1342.5 1473.75 {flags=graph
 y1=-0.11
-ypos1=-0.2905
-ypos2=3.3195
+ypos1=0.068190591
+ypos2=4.7393388
 divy=5
 subdivy=1
 unity=1
-x1=-1.7668973e-06
-x2=4.8013345e-06
+x1=2.328484e-07
+x2=4.4562498e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -142,22 +103,19 @@ xlabmag=0.5
 mode=Line
 y2=3.5
 legend=0
-node="x1.phi_1
-x1.phi_2
-data
-
-enable
-x1.d_out_row[1]
-x1.d_out_row[2]
-x1.d_out_row[3]
-x1.d_out_row[4]
-x1.d_out_row[5]
-x1.d_out_row[6]
-x1.d_out_row[7]
-x1.d_out_row[8]
-x1.d_out_row[9]
-x1.d_out_row[10]"
-color="6 6 6 6 6 6 6 6 6 6 6 6 6 6"}
+node="x1.d_out_row[13]
+x1.d_out_row[14]
+x1.d_out_row[15]
+x1.d_out_row[16]
+x1.d_out_row[17]
+x1.d_out_row[18]
+x1.d_out_row[19]
+x1.d_out_row[20]
+x1.d_out_row[21]
+x1.d_out_row[22]
+x1.d_out_row[23]
+d_out"
+color="6 6 6 6 6 6 6 6 6 6 6 6"}
 B 2 1598.75 -665 2398.75 -265 {flags=graph
 y1=1.1e-13
 y2=3.3
@@ -166,8 +124,8 @@ ypos2=4.2766541
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1.7e-06
+x1=-4.108333e-08
+x2=6.1673761e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -221,7 +179,7 @@ tclcommand="xschem raw_read $netlist_dir/tb_swmatrix_row_10_enable.raw tran"
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 861.25 -272.5 0 0 {name=p22 sig_type=std_logic lab=data
 }
-C {netlist.sym} -818.75 166.25 0 0 {name=s1 value="
+C {netlist.sym} -818.75 163.75 0 0 {name=s1 value="
 .param VDD = 3.3
 
 *.global VDDd VSSd
@@ -240,7 +198,7 @@ C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false
 .control
 
     save all
-    TRAN 0.2n 5u
+    TRAN 0.2n 7.5u
     write tb_swmatrix_row_10_enable.raw
 
 .endc
@@ -253,7 +211,7 @@ C {devices/vsource.sym} 1505 -150 0 0 {name=V3 value="SINE(1.65 1.65 2.857MEG 35
 C {devices/gnd.sym} 1505 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1161.25 -232.5 0 1 {name=p8 sig_type=std_logic lab=pin[1:24]
 spice_ignore=false}
-C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 4u 1n 1n 5u 14u)" savecurrent=false}
+C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 7.2u 1n 1n 5u 14u)" savecurrent=false}
 C {devices/gnd.sym} -138.75 81.25 0 0 {name=l4 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
 C {devices/lab_wire.sym} -138.75 -8.75 0 0 {name=p14 sig_type=std_logic lab=Enable}
