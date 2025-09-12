@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sch
+.subckt En_clk_din VDD VSS clk clock enable D_in Data_in
+*.PININFO D_in:I enable:I clk:B VDD:B VSS:B clock:O Data_in:O
+x6 D_in net1 Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
+x2 clk net2 clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
+* noconn VSS
+* noconn VDD
+.ends
