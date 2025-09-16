@@ -1,0 +1,167 @@
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_24_10/swmatrix_24_by_10.sch
+.subckt swmatrix_24_by_10 D_out BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] PIN[1] PIN[2] PIN[3] PIN[4]
++ PIN[5] PIN[6] PIN[7] PIN[8] PIN[9] PIN[10] PIN[11] PIN[12] PIN[13] PIN[14] PIN[15] PIN[16] PIN[17] PIN[18] PIN[19] PIN[20] PIN[21]
++ PIN[22] PIN[23] PIN[24] D_in VDD enable VSS clk
+*.PININFO PIN[1:24]:B BUS[1:10]:B D_in:I D_out:O VDD:B VSS:B enable:I clk:B
+xswmatrix_row[1] D_out_row[1] Data_in phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ VDD PIN[1] VSS swmatrix_row_10
+xswmatrix_row[2] D_out_row[2] D_out_row[1] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[2] VSS swmatrix_row_10
+xswmatrix_row[3] D_out_row[3] D_out_row[2] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[3] VSS swmatrix_row_10
+xswmatrix_row[4] D_out_row[4] D_out_row[3] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[4] VSS swmatrix_row_10
+xswmatrix_row[5] D_out_row[5] D_out_row[4] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[5] VSS swmatrix_row_10
+xswmatrix_row[6] D_out_row[6] D_out_row[5] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[6] VSS swmatrix_row_10
+xswmatrix_row[7] D_out_row[7] D_out_row[6] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[7] VSS swmatrix_row_10
+xswmatrix_row[8] D_out_row[8] D_out_row[7] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[8] VSS swmatrix_row_10
+xswmatrix_row[9] D_out_row[9] D_out_row[8] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[9] VSS swmatrix_row_10
+xswmatrix_row[10] D_out_row[10] D_out_row[9] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[10] VSS swmatrix_row_10
+xswmatrix_row[11] D_out_row[11] D_out_row[10] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[11] VSS swmatrix_row_10
+xswmatrix_row[12] D_out_row[12] D_out_row[11] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[12] VSS swmatrix_row_10
+xswmatrix_row[13] D_out_row[13] D_out_row[12] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[13] VSS swmatrix_row_10
+xswmatrix_row[14] D_out_row[14] D_out_row[13] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[14] VSS swmatrix_row_10
+xswmatrix_row[15] D_out_row[15] D_out_row[14] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[15] VSS swmatrix_row_10
+xswmatrix_row[16] D_out_row[16] D_out_row[15] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[16] VSS swmatrix_row_10
+xswmatrix_row[17] D_out_row[17] D_out_row[16] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[17] VSS swmatrix_row_10
+xswmatrix_row[18] D_out_row[18] D_out_row[17] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[18] VSS swmatrix_row_10
+xswmatrix_row[19] D_out_row[19] D_out_row[18] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[19] VSS swmatrix_row_10
+xswmatrix_row[20] D_out_row[20] D_out_row[19] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[20] VSS swmatrix_row_10
+xswmatrix_row[21] D_out_row[21] D_out_row[20] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[21] VSS swmatrix_row_10
+xswmatrix_row[22] D_out_row[22] D_out_row[21] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[22] VSS swmatrix_row_10
+xswmatrix_row[23] D_out_row[23] D_out_row[22] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDD PIN[23] VSS swmatrix_row_10
+xswmatrix_row[24] D_out D_out_row[23] phi_1 phi_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ VDD PIN[24] VSS swmatrix_row_10
+x1 phi_2 clock phi_1 VDD VSS NO_ClkGen
+x4 VDD VSS clk clock enable D_in Data_in En_clk_din
+.ends
+
+* expanding   symbol:  swmatrix_row_10/swmatrix_row_10.sym # of pins=9
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_row_10/swmatrix_row_10.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_row_10/swmatrix_row_10.sch
+.subckt swmatrix_row_10 D_out D_in PHI_1 PHI_2 enable BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDD
++ pin VSS
+*.PININFO pin:B PHI_2:I PHI_1:I BUS[1:10]:B D_in:I D_out:O VDD:B VSS:B enable:I
+xSR D_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] D_out gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10] PHI_1
++ PHI_2 enable VDD VSS ShiftReg_row_10_2
+xTgates[1] gc[1] BUS[1] pin VSS VDD swmatrix_Tgate
+xTgates[2] gc[2] BUS[2] pin VSS VDD swmatrix_Tgate
+xTgates[3] gc[3] BUS[3] pin VSS VDD swmatrix_Tgate
+xTgates[4] gc[4] BUS[4] pin VSS VDD swmatrix_Tgate
+xTgates[5] gc[5] BUS[5] pin VSS VDD swmatrix_Tgate
+xTgates[6] gc[6] BUS[6] pin VSS VDD swmatrix_Tgate
+xTgates[7] gc[7] BUS[7] pin VSS VDD swmatrix_Tgate
+xTgates[8] gc[8] BUS[8] pin VSS VDD swmatrix_Tgate
+xTgates[9] gc[9] BUS[9] pin VSS VDD swmatrix_Tgate
+xTgates[10] gc[10] BUS[10] pin VSS VDD swmatrix_Tgate
+.ends
+
+
+* expanding   symbol:  NO_ClkGen/NO_ClkGen.sym # of pins=5
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
+.subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
+*.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
+x1 CLKB OUT_bot_d OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 net3 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x7 PHI_1 net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x8 net4 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 CLKB CLKbuf VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 CLK CLKB VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x11 net5 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x12 net6 net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x13 net2 net7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x15 net1 net8 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x17 net7 net9 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x18 net8 net12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x14 net9 net10 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x16 net12 net11 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x19 net10 OUT_top_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x20 net11 OUT_bot_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDD
+* noconn VSS
+.ends
+
+
+* expanding   symbol:  En_clk_din/En_clk_din.sym # of pins=7
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sch
+.subckt En_clk_din VDD VSS clk clock enable D_in Data_in
+*.PININFO D_in:I enable:I clk:B VDD:B VSS:B clock:O Data_in:O
+x6 D_in net1 Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
+x2 clk net2 clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
+* noconn VSS
+* noconn VDD
+.ends
+
+
+* expanding   symbol:  ShiftReg_row_10_2/ShiftReg_row_10_2.sym # of pins=8
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sch
+.subckt ShiftReg_row_10_2 D_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8]
++ gc[9] gc[10] PHI_1 PHI_2 EN VDD VSS
+*.PININFO PHI_1:I PHI_2:I D_in:I Q[1:10]:O VDD:B VSS:B EN:B gc[1:10]:B
+xFF[1] Q[1] D_in PHI_1 gc[1] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[2] Q[2] Q[1] PHI_1 gc[2] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[3] Q[3] Q[2] PHI_1 gc[3] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[4] Q[4] Q[3] PHI_1 gc[4] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[5] Q[5] Q[4] PHI_1 gc[5] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[6] Q[6] Q[5] PHI_1 gc[6] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[7] Q[7] Q[6] PHI_1 gc[7] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[8] Q[8] Q[7] PHI_1 gc[8] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[9] Q[9] Q[8] PHI_1 gc[9] PHI_2 EN VDD VSS DFF_2phase_1
+xFF[10] Q[10] Q[9] PHI_1 gc[10] PHI_2 EN VDD VSS DFF_2phase_1
+.ends
+
+
+* expanding   symbol:  swmatrix_Tgate/swmatrix_Tgate.sym # of pins=5
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
+.subckt swmatrix_Tgate gated_control T2 T1 VSS VDD
+*.PININFO T1:B T2:B VDD:B VSS:B gated_control:I
+XM1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=24u nf=6 m=1
+XM2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=72u nf=6 m=1
+**** begin user architecture code
+**** end user architecture code
+x1 gated_control gated_controlb VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+
+
+* expanding   symbol:  DFF_2phase_1/DFF_2phase_1.sym # of pins=8
+** sym_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 Q D PHI_1 gated_control PHI_2 EN VDD VSS
+*.PININFO D:I PHI_1:I PHI_2:I Q:O VDD:B VSS:B gated_control:O EN:I
+xmain D PHI_1 out_m VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+* noconn VSS
+* noconn VDD
+x1 net1 gated_control VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 EN Q net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+.ends
+
