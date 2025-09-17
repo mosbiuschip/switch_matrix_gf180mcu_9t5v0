@@ -38,13 +38,13 @@ logy=0
 digital=1}
 B 2 345 7.5 1341.25 742.5 {flags=graph
 y1=-0.11
-ypos1=0.28142534
-ypos2=5.7982388
+ypos1=1.0607641
+ypos2=6.6052654
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=7.5e-06
+x1=-9.2826521e-08
+x2=7.4071735e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -85,8 +85,8 @@ ypos2=4.7393388
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=7.5e-06
+x1=-9.2826521e-08
+x2=7.4071735e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -187,7 +187,7 @@ C {netlist.sym} -818.75 163.75 0 0 {name=s1 value="
 
 * clock
 abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
+.model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_slow.txt\\")
 * data
 aclock [ clock_node ] clock_vector
 .model clock_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
@@ -199,7 +199,7 @@ C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false
 .control
 
     save all
-    TRAN 0.2n 7.5u
+    TRAN 2n 75u
     write tb_swmatrix_row_10_enable.raw
 
 .endc
@@ -208,11 +208,11 @@ C {lab_wire.sym} 1160 -270 0 1 {name=p16 sig_type=std_logic lab=D_out
 spice_ignore=false}
 C {lab_wire.sym} 1160 -250 0 1 {name=p18 sig_type=std_logic lab=BUS1[1:10]
 spice_ignore=false}
-C {devices/vsource.sym} 1505 -150 0 0 {name=V3 value="SINE(1.65 1.65 2.857MEG 350n)" savecurrent=false}
+C {devices/vsource.sym} 1505 -150 0 0 {name=V3 value="SINE(1.65 1.65 1.857MEG 3500n)" savecurrent=false}
 C {devices/gnd.sym} 1505 -90 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 1160 -230 0 1 {name=p8 sig_type=std_logic lab=pin[1:24]
 spice_ignore=false}
-C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 7.2u 1n 1n 5u 14u)" savecurrent=false}
+C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 72u 10n 10n 50u 140u)" savecurrent=false}
 C {devices/gnd.sym} -138.75 81.25 0 0 {name=l4 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
 C {devices/lab_wire.sym} -138.75 -8.75 0 0 {name=p14 sig_type=std_logic lab=Enable}
@@ -222,6 +222,6 @@ C {devices/lab_wire.sym} 860 -210 0 0 {name=p4 sig_type=std_logic lab=VDDd}
 C {devices/lab_wire.sym} 860 -190 0 0 {name=p5 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 1505 -180 0 1 {name=p6 sig_type=std_logic lab=pin[1]
 spice_ignore=false}
-C {devices/vsource.sym} 670 -200 0 0 {name=V5 value="PULSE(0 3.3 0 0.2n 0.2n 10n 20n)" savecurrent=false}
+C {devices/vsource.sym} 670 -200 0 0 {name=V5 value="PULSE(0 3.3 0 2n 2n 100n 200n)" savecurrent=false}
 C {devices/gnd.sym} 670 -140 0 0 {name=l5 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
