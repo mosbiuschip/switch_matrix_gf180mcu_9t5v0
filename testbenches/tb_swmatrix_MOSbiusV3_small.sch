@@ -6,13 +6,13 @@ S {}
 E {}
 B 2 467.5 90 1643.75 1235 {flags=graph
 y1=0
-ypos1=4.05
-ypos2=6.75
+ypos1=0
+ypos2=2.7
 divy=5
 subdivy=1
 unity=1
-x1=-1.75e-08
-x2=3.325e-07
+x1=0
+x2=1.1e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -79,23 +79,20 @@ between the pads and data and clock
 N -217.5 42.5 -217.5 72.5 {lab=GND}
 N -217.5 -50 -217.5 -17.5 {lab=VSSd}
 N 1305.625 -165.625 1305.625 -165 {lab=D_out}
-N -85 -182.5 5 -182.5 {lab=data}
 N 75 -182.5 145 -182.5 {lab=datab}
-N -85 -110 5 -110 {lab=clock}
 N 75 -110 145 -110 {lab=clockb}
 N 1305.625 -145.625 1305.625 -145 {lab=BUS[1:25]}
-N 1305.625 -125.625 1305.625 -125 {lab=PIN[1:130]}
+N 1305.625 -125.625 1305.625 -125 {lab=PIN[1:5]}
 N 1255 -165 1305.625 -165 {lab=D_out}
 N 1305.625 -145 1407.5 -145 {lab=BUS[1:25]}
 N 1255 -145 1305.625 -145 {lab=BUS[1:25]}
-N 1305.625 -125 1407.5 -125 {lab=PIN[1:130]}
-N 1255 -125 1305.625 -125 {lab=PIN[1:130]}
+N 1305.625 -125 1407.5 -125 {lab=PIN[1:5]}
+N 1255 -125 1305.625 -125 {lab=PIN[1:5]}
 N 1305.625 -165 1407.5 -165 {lab=D_out}
 N 780 -110 802.5 -110 {lab=#net1}
 N 780 -160 802.5 -160 {lab=#net2}
 N 882.5 -160 882.5 -145 {lab=PHI_1}
 N 882.5 -145 955 -145 {lab=PHI_1}
-N 597.5 -145.625 597.5 -145 {lab=PHI_1_gen}
 N 780 -217.5 802.5 -217.5 {lab=#net3}
 N 882.5 -217.5 915 -217.5 {lab=data_in}
 N 915 -217.5 915 -165 {lab=data_in}
@@ -122,12 +119,11 @@ N -95 -50 -95 70 {lab=VSSd}
 N -217.5 -50 -95 -50 {lab=VSSd}
 N -37.5 47.5 -37.5 70 {lab=VSSd}
 N -95 70 -37.5 70 {lab=VSSd}
-N -37.5 70 270.625 70 {lab=VSSd}
+N 272.5 70 950 70 {lab=VSSd}
 N 890 -125 955 -125 {lab=PHI_2}
 N 882.5 -110 890 -110 {lab=PHI_2}
 N 910 -110 955 -110 {lab=enable}
 N 910 -110 910 -50 {lab=enable}
-N 270.625 70 950 70 {lab=VSSd}
 N 255 55 925 55 {lab=VDDd}
 N 780 -50 802.5 -50 {lab=#net5}
 N 882.5 -50 910 -50 {lab=enable}
@@ -135,28 +131,38 @@ N -37.5 -40 -37.5 -7.5 {lab=enable_gen}
 N -37.5 -40 600 -40 {lab=enable_gen}
 N 600 -50 600 -40 {lab=enable_gen}
 N 600 -50 700 -50 {lab=enable_gen}
-N 571.25 -145.625 597.5 -145.625 {lab=PHI_1_gen}
-N 571.25 -125.625 597.5 -125.625 {lab=PHI_2_gen}
-N 255 -95.625 271.25 -95.625 {lab=VDDd}
-N 270.625 -75.625 271.25 -75.625 {lab=VSSd}
-N 597.5 -125.625 597.5 -110 {lab=PHI_2_gen}
-N 255 -95.625 255 -75 {lab=VDDd}
-N 270.625 -75.625 270.625 70 {lab=VSSd}
-N 597.5 -160 597.5 -145.625 {lab=PHI_1_gen}
-N 225 -145.625 271.25 -145.625 {lab=#net6}
-N 225 -145.625 225 -110 {lab=#net6}
+N 255 -95 255 -75 {lab=VDDd}
+N 597.5 -160 597.5 -145 {lab=PHI_1_gen}
+N -20 -182.5 -5 -182.5 {lab=#net6}
+N -17.5 -110 -5 -110 {lab=#net7}
+N -130 -110 -77.5 -110 {lab=clock}
+N -132.5 -182.5 -80 -182.5 {lab=data}
+N 225 -145 272.5 -145 {lab=clk_in}
+N 225 -145 225 -110 {lab=clk_in}
+N 255 -95 272.5 -95 {lab=VDDd}
+N 272.5 -75 272.5 70 {lab=VSSd}
+N 572.5 -145 597.5 -145 {lab=PHI_1_gen}
+N 572.5 -125 597.5 -125 {lab=PHI_2_gen}
+N 597.5 -125 597.5 -110 {lab=PHI_2_gen}
+N 255 -95.625 255 -95 {lab=VDDd}
+N -37.5 70 272.5 70 {lab=VSSd}
+N 597.5 -125.625 597.5 -125 {lab=PHI_2_gen}
 C {devices/vsource.sym} -217.5 12.5 0 0 {name=Vvssd value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} -217.5 -96.25 0 0 {name=Vvddd value=\{VDD\} savecurrent=false}
+C {devices/vsource.sym} -217.5 -96.25 0 0 {name=Vvddd value="PWL(0 0 5n \{VDD\} 1 \{VDD\})" savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
-C {devices/code_shown.sym} -765 541.25 0 0 {name=Simulation only_toplevel=false value="
+C {devices/code_shown.sym} -767.5 541.25 0 0 {name=Simulation only_toplevel=false value="
+.include /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/tb_swmatrix_MOSbiusV3_small_outputs.inc
 .control
     * OP
-    save all
-    TRAN 0.2n 350n
+    option numdgt=5
+    save v(VDDd) v(PHI_1) v(PHI_2) v(enable) v(data_in)
+    * save v(xswmatrix.xswmatrix_row[*].q[*]) -- DOES NOT WORK !!
+    * save all
+* Save commands have to go before the TRAN command or ngspice saves everything ... 
+    TRAN 0.2n 0.005u
     write tb_swmatrix.raw
-
 .endc
 "}
 C {devices/code_shown.sym} -757.5 122.5 0 0 {name=Models only_toplevel=false
@@ -173,30 +179,28 @@ tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 945 -145 0 0 {name=p6 sig_type=std_logic lab=PHI_1}
 C {lab_wire.sym} 940 -125 0 0 {name=p17 sig_type=std_logic lab=PHI_2}
-C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 421.25 -135.625 0 0 {name=xNO_ClkGen}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 422.5 -135 0 0 {name=xNO_ClkGen}
 C {lab_wire.sym} 1311.25 -165 0 1 {name=p20 sig_type=std_logic lab=D_out}
-C {lab_wire.sym} -35 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
+C {lab_wire.sym} -100 -182.5 0 0 {name=p22 sig_type=std_logic lab=data
 }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 35 -182.5 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 132.5 -182.5 0 0 {name=p23 sig_type=std_logic lab=datab
 
 }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -182.5 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {lab_wire.sym} -35 -110 0 0 {name=p1 sig_type=std_logic lab=clock}
+C {lab_wire.sym} -100 -110 0 0 {name=p1 sig_type=std_logic lab=clock}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 35 -110 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 
 }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 947.5 -165 0 0 {name=p5 sig_type=std_logic lab=data_in}
-C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {switch_matrix_gf180mcu_9t5v0/swmatrix_130_by_25/swmatrix_25_by_130.sym} 1105 -145 0 0 {name=xSWMATRIX}
 C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:25]}
-C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:130]}
+C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:5]}
 C {noconn.sym} 1407.5 -165 0 1 {name=l3}
 C {noconn.sym} 1407.5 -145 0 1 {name=l4}
 C {noconn.sym} 1407.5 -125 0 1 {name=l5}
-C {netlist.sym} -757.5 237.5 0 0 {name=s1 value="
+C {netlist.sym} -757.5 235 0 0 {name=s1 value="
 .param VDD = 3.3
 
 *.global VDDd VSSd
@@ -221,6 +225,21 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 740 -50 0 0 {name=x2 VGND=VSS
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 842.5 -50 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 910 -80 0 0 {name=p11 sig_type=std_logic lab=enable}
 C {devices/vsource.sym} -37.5 17.5 0 0 {name=Venable value=0 savecurrent=false}
-C {lab_pin.sym} 655.625 -160 0 0 {name=p10 sig_type=std_logic lab=PHI_1_gen}
-C {lab_pin.sym} 650 -110 0 0 {name=p12 sig_type=std_logic lab=PHI_2_gen}
-C {lab_pin.sym} 641.25 -50 0 0 {name=p13 sig_type=std_logic lab=enable_gen}
+C {lab_pin.sym} 683.125 -160 0 0 {name=p10 sig_type=std_logic lab=PHI_1_gen}
+C {lab_pin.sym} 687.5 -110 0 0 {name=p12 sig_type=std_logic lab=PHI_2_gen}
+C {lab_pin.sym} 686.25 -50 0 0 {name=p13 sig_type=std_logic lab=enable_gen}
+C {switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_25/swmatrix_25_by_5.sym} 1105 -145 0 0 {name=xSWMATRIX}
+C {res.sym} -50 -182.5 1 1 {name=R2
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} -47.5 -110 1 1 {name=R3
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {lab_wire.sym} 252.5 -145 0 0 {name=p7 sig_type=std_logic lab=clk_in
+
+
+}
