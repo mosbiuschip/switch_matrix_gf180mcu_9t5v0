@@ -9,7 +9,7 @@ T {This is a 25-stage shift register that controls
 
 } 35.625 -280 0 0 0.2 0.2 {}
 N 310.625 -30 438.125 -30 {lab=pin}
-N 310.625 -50 438.125 -50 {lab=BUS[1:10]}
+N 310.625 -50 438.125 -50 {lab=BUS[1:25]}
 N -69.375 -170 10.625 -170 {lab=PHI_1}
 N -69.375 -150 10.625 -150 {lab=PHI_2}
 N -69.375 -50 10.625 -50 {lab=Q[1:24],D_out}
@@ -35,7 +35,7 @@ C {lab_wire.sym} 320.625 -190 0 1 {name=p4 sig_type=std_logic lab=Q[1:24],D_out}
 C {lab_wire.sym} -9.375 -50 0 0 {name=p5 sig_type=std_logic lab=Q[1:24],D_out}
 C {iopin.sym} 438.125 -50 0 0 {name=p6 lab=BUS[1:25]}
 C {ipin.sym} -69.375 -190 0 0 {name=p7 lab=D_in}
-C {opin.sym} 435.625 -190 0 0 {name=p8 lab=D_out}
+C {iopin.sym} 445.625 -160 0 0 {name=p8 lab=Q[1:24]}
 C {title.sym} -62.5 232.5 0 0 {name=l2 author="Peter Kinget"}
 C {iopin.sym} -126.875 -120 0 1 {name=p9 lab=VDDd
 }
@@ -43,3 +43,4 @@ C {iopin.sym} -126.875 -100 0 1 {name=p10 lab=VSSd
 }
 C {ipin.sym} -157.5 -23.75 0 0 {name=p11 lab=enable
 }
+C {opin.sym} 445.625 -190 0 0 {name=p12 lab=D_out}

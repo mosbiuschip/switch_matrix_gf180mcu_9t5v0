@@ -20,6 +20,7 @@ N 300 -10 360 -10 {lab=D_out_row[1:4],D_out}
 N -80 60 0 60 {lab=VDDd}
 N -80 80 0 80 {lab=VSSd}
 N -170 45 -0 45 {lab=enable}
+N 300 80 460 80 {lab=Q_out[1:120]}
 C {iopin.sym} -260 130 0 0 {name=p1 lab=PIN[1:5]
 
 }
@@ -35,10 +36,10 @@ C {ipin.sym} -170 -10 0 0 {name=p5 lab=D_in
 }
 C {lab_wire.sym} 360 -10 0 1 {name=p6 sig_type=std_logic lab=D_out_row[1:4],D_out}
 C {lab_wire.sym} -10 -10 0 0 {name=p7 sig_type=std_logic lab=D_in,D_out_row[1:4]}
-C {lab_wire.sym} 360 10 0 1 {name=p8 sig_type=std_logic lab=BUS[1:25]}
+C {lab_wire.sym} 390 80 0 1 {name=p8 sig_type=std_logic lab=Q_out[1:120]}
 C {lab_wire.sym} 360 30 0 1 {name=p9 sig_type=std_logic lab=PIN[1:5]
 }
-C {opin.sym} 540 -10 0 0 {name=p10 lab=D_out
+C {iopin.sym} 540 70 0 0 {name=p10 lab=Q_out[1:120]
 }
 C {title.sym} -142.5 255 0 0 {name=l2 author="Peter Kinget"}
 C {iopin.sym} -80 60 0 1 {name=p11 lab=VDDd
@@ -47,3 +48,8 @@ C {iopin.sym} -80 80 0 1 {name=p12 lab=VSSd
 }
 C {ipin.sym} -170 45 0 0 {name=p13 lab=enable
 }
+C {iopin.sym} 540 -10 0 0 {name=p14 lab=D_out
+}
+C {iopin.sym} 540 30 0 0 {name=p15 lab=D_out_row[1:4]
+}
+C {lab_wire.sym} 360 10 0 1 {name=p16 sig_type=std_logic lab=BUS[1:25]}

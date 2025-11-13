@@ -161,8 +161,8 @@ C {devices/code_shown.sym} -767.5 541.25 0 0 {name=Simulation only_toplevel=fals
     * save v(xswmatrix.xswmatrix_row[*].q[*]) -- DOES NOT WORK !!
     * save all
 * Save commands have to go before the TRAN command or ngspice saves everything ... 
-    TRAN 0.2n 0.005u
-    write tb_swmatrix.raw
+    TRAN 0.2n 2.6u
+    write tb_swmatrix_long.raw
 .endc
 "}
 C {devices/code_shown.sym} -757.5 122.5 0 0 {name=Models only_toplevel=false
@@ -207,10 +207,10 @@ C {netlist.sym} -757.5 235 0 0 {name=s1 value="
 
 * clock
 abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
+.model input_vector d_source(input_file=\\"/foss/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_25.txt\\")
 * data
 aclock [ clock_node ] clock_vector
-.model clock_vector d_source(input_file=\\"/foss/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
+.model clock_vector d_source(input_file=\\"/foss/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_25_clk.txt\\")
 * convert digital signals to analog
 aconvert [ bit_node clock_node ] [ data clock ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)

@@ -1,0 +1,336 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/full_switch_matrix_25_by_5/full_switch_matrix_25_by_5.sch
+.subckt full_switch_matrix_25_by_5 data D_out clock BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11]
++ BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[1] PIN[2] PIN[3]
++ PIN[4] PIN[5] enable VDDd VSSd PROBE[1] PROBE[2] PROBE[3] PROBE[4] PROBE[5] PROBE[6] PROBE[7] PROBE[8] PROBE[9] PROBE[10] PROBE[11]
++ PROBE[12] PROBE[13] PROBE[14] PROBE[15] PROBE[16] PROBE[17] PROBE[18] PROBE[19] PROBE[20] PROBE[21] PROBE[22] PROBE[23] PROBE[24] PROBE[25]
++ PROBE[26] PROBE[27] PROBE[28] PROBE[29] PROBE[30] PROBE[31] PROBE[32] PROBE[33] PROBE[34] PROBE[35] PROBE[36] PROBE[37] PROBE[38] PROBE[39]
++ PROBE[40] PROBE[41] PROBE[42] PROBE[43] PROBE[44] PROBE[45] PROBE[46] PROBE[47] PROBE[48] PROBE[49] PROBE[50] PROBE[51] PROBE[52] PROBE[53]
++ PROBE[54] PROBE[55] PROBE[56] PROBE[57] PROBE[58] PROBE[59] PROBE[60] PROBE[61] PROBE[62] PROBE[63] PROBE[64] PROBE[65] PROBE[66] PROBE[67]
++ PROBE[68] PROBE[69] PROBE[70] PROBE[71] PROBE[72] PROBE[73] PROBE[74] PROBE[75] PROBE[76] PROBE[77] PROBE[78] PROBE[79] PROBE[80] PROBE[81]
++ PROBE[82] PROBE[83] PROBE[84] PROBE[85] PROBE[86] PROBE[87] PROBE[88] PROBE[89] PROBE[90] PROBE[91] PROBE[92] PROBE[93] PROBE[94] PROBE[95]
++ PROBE[96] PROBE[97] PROBE[98] PROBE[99] PROBE[100] PROBE[101] PROBE[102] PROBE[103] PROBE[104] PROBE[105] PROBE[106] PROBE[107] PROBE[108]
++ PROBE[109] PROBE[110] PROBE[111] PROBE[112] PROBE[113] PROBE[114] PROBE[115] PROBE[116] PROBE[117] PROBE[118] PROBE[119] PROBE[120]
++ PROBE[121] PROBE[122] PROBE[123] PROBE[124]
+*.PININFO data:I clock:I enable:I D_out:O PIN[1:5]:O BUS[1:25]:O VSSd:B VDDd:B PROBE[1:124]:O
+xNO_ClkGen PHI_2_gen clk_in PHI_1_gen VDDd VSSd NO_ClkGen
+x3 data datab VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x1 datab net4 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x4 clock clockb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x5 clockb clk_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_2
+x6 PHI_2_gen net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x7 net1 PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x9 PHI_1_gen net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x10 net2 PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x12 net4 net3 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x13 net3 data_in VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x2 enable net5 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x8 net5 enable VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+xSWMATRIX data_in D_out PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11] BUS[12] BUS[13]
++ BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[1] PIN[2] PIN[3] PIN[4] PIN[5] VDDd
++ VSSd enable Q_out[1] Q_out[2] Q_out[3] Q_out[4] Q_out[5] Q_out[6] Q_out[7] Q_out[8] Q_out[9] Q_out[10] Q_out[11] Q_out[12] Q_out[13]
++ Q_out[14] Q_out[15] Q_out[16] Q_out[17] Q_out[18] Q_out[19] Q_out[20] Q_out[21] Q_out[22] Q_out[23] Q_out[24] Q_out[25] Q_out[26] Q_out[27]
++ Q_out[28] Q_out[29] Q_out[30] Q_out[31] Q_out[32] Q_out[33] Q_out[34] Q_out[35] Q_out[36] Q_out[37] Q_out[38] Q_out[39] Q_out[40] Q_out[41]
++ Q_out[42] Q_out[43] Q_out[44] Q_out[45] Q_out[46] Q_out[47] Q_out[48] Q_out[49] Q_out[50] Q_out[51] Q_out[52] Q_out[53] Q_out[54] Q_out[55]
++ Q_out[56] Q_out[57] Q_out[58] Q_out[59] Q_out[60] Q_out[61] Q_out[62] Q_out[63] Q_out[64] Q_out[65] Q_out[66] Q_out[67] Q_out[68] Q_out[69]
++ Q_out[70] Q_out[71] Q_out[72] Q_out[73] Q_out[74] Q_out[75] Q_out[76] Q_out[77] Q_out[78] Q_out[79] Q_out[80] Q_out[81] Q_out[82] Q_out[83]
++ Q_out[84] Q_out[85] Q_out[86] Q_out[87] Q_out[88] Q_out[89] Q_out[90] Q_out[91] Q_out[92] Q_out[93] Q_out[94] Q_out[95] Q_out[96] Q_out[97]
++ Q_out[98] Q_out[99] Q_out[100] Q_out[101] Q_out[102] Q_out[103] Q_out[104] Q_out[105] Q_out[106] Q_out[107] Q_out[108] Q_out[109]
++ Q_out[110] Q_out[111] Q_out[112] Q_out[113] Q_out[114] Q_out[115] Q_out[116] Q_out[117] Q_out[118] Q_out[119] Q_out[120] D_out_row[1]
++ D_out_row[2] D_out_row[3] D_out_row[4] swmatrix_25_by_5
+Rshort[1] PROBE[1] Q_out[1] 1e-3 m=1
+Rshort[2] PROBE[2] Q_out[2] 1e-3 m=1
+Rshort[3] PROBE[3] Q_out[3] 1e-3 m=1
+Rshort[4] PROBE[4] Q_out[4] 1e-3 m=1
+Rshort[5] PROBE[5] Q_out[5] 1e-3 m=1
+Rshort[6] PROBE[6] Q_out[6] 1e-3 m=1
+Rshort[7] PROBE[7] Q_out[7] 1e-3 m=1
+Rshort[8] PROBE[8] Q_out[8] 1e-3 m=1
+Rshort[9] PROBE[9] Q_out[9] 1e-3 m=1
+Rshort[10] PROBE[10] Q_out[10] 1e-3 m=1
+Rshort[11] PROBE[11] Q_out[11] 1e-3 m=1
+Rshort[12] PROBE[12] Q_out[12] 1e-3 m=1
+Rshort[13] PROBE[13] Q_out[13] 1e-3 m=1
+Rshort[14] PROBE[14] Q_out[14] 1e-3 m=1
+Rshort[15] PROBE[15] Q_out[15] 1e-3 m=1
+Rshort[16] PROBE[16] Q_out[16] 1e-3 m=1
+Rshort[17] PROBE[17] Q_out[17] 1e-3 m=1
+Rshort[18] PROBE[18] Q_out[18] 1e-3 m=1
+Rshort[19] PROBE[19] Q_out[19] 1e-3 m=1
+Rshort[20] PROBE[20] Q_out[20] 1e-3 m=1
+Rshort[21] PROBE[21] Q_out[21] 1e-3 m=1
+Rshort[22] PROBE[22] Q_out[22] 1e-3 m=1
+Rshort[23] PROBE[23] Q_out[23] 1e-3 m=1
+Rshort[24] PROBE[24] Q_out[24] 1e-3 m=1
+Rshort[25] PROBE[25] D_our_row[1] 1e-3 m=1
+Rshort[26] PROBE[26] Q_out[25] 1e-3 m=1
+Rshort[27] PROBE[27] Q_out[26] 1e-3 m=1
+Rshort[28] PROBE[28] Q_out[27] 1e-3 m=1
+Rshort[29] PROBE[29] Q_out[28] 1e-3 m=1
+Rshort[30] PROBE[30] Q_out[29] 1e-3 m=1
+Rshort[31] PROBE[31] Q_out[30] 1e-3 m=1
+Rshort[32] PROBE[32] Q_out[31] 1e-3 m=1
+Rshort[33] PROBE[33] Q_out[32] 1e-3 m=1
+Rshort[34] PROBE[34] Q_out[33] 1e-3 m=1
+Rshort[35] PROBE[35] Q_out[34] 1e-3 m=1
+Rshort[36] PROBE[36] Q_out[35] 1e-3 m=1
+Rshort[37] PROBE[37] Q_out[36] 1e-3 m=1
+Rshort[38] PROBE[38] Q_out[37] 1e-3 m=1
+Rshort[39] PROBE[39] Q_out[38] 1e-3 m=1
+Rshort[40] PROBE[40] Q_out[39] 1e-3 m=1
+Rshort[41] PROBE[41] Q_out[40] 1e-3 m=1
+Rshort[42] PROBE[42] Q_out[41] 1e-3 m=1
+Rshort[43] PROBE[43] Q_out[42] 1e-3 m=1
+Rshort[44] PROBE[44] Q_out[43] 1e-3 m=1
+Rshort[45] PROBE[45] Q_out[44] 1e-3 m=1
+Rshort[46] PROBE[46] Q_out[45] 1e-3 m=1
+Rshort[47] PROBE[47] Q_out[46] 1e-3 m=1
+Rshort[48] PROBE[48] Q_out[47] 1e-3 m=1
+Rshort[49] PROBE[49] Q_out[48] 1e-3 m=1
+Rshort[50] PROBE[50] D_our_row[2] 1e-3 m=1
+Rshort[51] PROBE[51] Q_out[49] 1e-3 m=1
+Rshort[52] PROBE[52] Q_out[50] 1e-3 m=1
+Rshort[53] PROBE[53] Q_out[51] 1e-3 m=1
+Rshort[54] PROBE[54] Q_out[52] 1e-3 m=1
+Rshort[55] PROBE[55] Q_out[53] 1e-3 m=1
+Rshort[56] PROBE[56] Q_out[54] 1e-3 m=1
+Rshort[57] PROBE[57] Q_out[55] 1e-3 m=1
+Rshort[58] PROBE[58] Q_out[56] 1e-3 m=1
+Rshort[59] PROBE[59] Q_out[57] 1e-3 m=1
+Rshort[60] PROBE[60] Q_out[58] 1e-3 m=1
+Rshort[61] PROBE[61] Q_out[59] 1e-3 m=1
+Rshort[62] PROBE[62] Q_out[60] 1e-3 m=1
+Rshort[63] PROBE[63] Q_out[61] 1e-3 m=1
+Rshort[64] PROBE[64] Q_out[62] 1e-3 m=1
+Rshort[65] PROBE[65] Q_out[63] 1e-3 m=1
+Rshort[66] PROBE[66] Q_out[64] 1e-3 m=1
+Rshort[67] PROBE[67] Q_out[65] 1e-3 m=1
+Rshort[68] PROBE[68] Q_out[66] 1e-3 m=1
+Rshort[69] PROBE[69] Q_out[67] 1e-3 m=1
+Rshort[70] PROBE[70] Q_out[68] 1e-3 m=1
+Rshort[71] PROBE[71] Q_out[69] 1e-3 m=1
+Rshort[72] PROBE[72] Q_out[70] 1e-3 m=1
+Rshort[73] PROBE[73] Q_out[71] 1e-3 m=1
+Rshort[74] PROBE[74] Q_out[72] 1e-3 m=1
+Rshort[75] PROBE[75] D_our_row[3] 1e-3 m=1
+Rshort[76] PROBE[76] Q_out[73] 1e-3 m=1
+Rshort[77] PROBE[77] Q_out[74] 1e-3 m=1
+Rshort[78] PROBE[78] Q_out[75] 1e-3 m=1
+Rshort[79] PROBE[79] Q_out[76] 1e-3 m=1
+Rshort[80] PROBE[80] Q_out[77] 1e-3 m=1
+Rshort[81] PROBE[81] Q_out[78] 1e-3 m=1
+Rshort[82] PROBE[82] Q_out[79] 1e-3 m=1
+Rshort[83] PROBE[83] Q_out[80] 1e-3 m=1
+Rshort[84] PROBE[84] Q_out[81] 1e-3 m=1
+Rshort[85] PROBE[85] Q_out[82] 1e-3 m=1
+Rshort[86] PROBE[86] Q_out[83] 1e-3 m=1
+Rshort[87] PROBE[87] Q_out[84] 1e-3 m=1
+Rshort[88] PROBE[88] Q_out[85] 1e-3 m=1
+Rshort[89] PROBE[89] Q_out[86] 1e-3 m=1
+Rshort[90] PROBE[90] Q_out[87] 1e-3 m=1
+Rshort[91] PROBE[91] Q_out[88] 1e-3 m=1
+Rshort[92] PROBE[92] Q_out[89] 1e-3 m=1
+Rshort[93] PROBE[93] Q_out[90] 1e-3 m=1
+Rshort[94] PROBE[94] Q_out[91] 1e-3 m=1
+Rshort[95] PROBE[95] Q_out[92] 1e-3 m=1
+Rshort[96] PROBE[96] Q_out[93] 1e-3 m=1
+Rshort[97] PROBE[97] Q_out[94] 1e-3 m=1
+Rshort[98] PROBE[98] Q_out[95] 1e-3 m=1
+Rshort[99] PROBE[99] Q_out[96] 1e-3 m=1
+Rshort[100] PROBE[100] D_our_row[4] 1e-3 m=1
+Rshort[101] PROBE[101] Q_out[97] 1e-3 m=1
+Rshort[102] PROBE[102] Q_out[98] 1e-3 m=1
+Rshort[103] PROBE[103] Q_out[99] 1e-3 m=1
+Rshort[104] PROBE[104] Q_out[100] 1e-3 m=1
+Rshort[105] PROBE[105] Q_out[101] 1e-3 m=1
+Rshort[106] PROBE[106] Q_out[102] 1e-3 m=1
+Rshort[107] PROBE[107] Q_out[103] 1e-3 m=1
+Rshort[108] PROBE[108] Q_out[104] 1e-3 m=1
+Rshort[109] PROBE[109] Q_out[105] 1e-3 m=1
+Rshort[110] PROBE[110] Q_out[106] 1e-3 m=1
+Rshort[111] PROBE[111] Q_out[107] 1e-3 m=1
+Rshort[112] PROBE[112] Q_out[108] 1e-3 m=1
+Rshort[113] PROBE[113] Q_out[109] 1e-3 m=1
+Rshort[114] PROBE[114] Q_out[110] 1e-3 m=1
+Rshort[115] PROBE[115] Q_out[111] 1e-3 m=1
+Rshort[116] PROBE[116] Q_out[112] 1e-3 m=1
+Rshort[117] PROBE[117] Q_out[113] 1e-3 m=1
+Rshort[118] PROBE[118] Q_out[114] 1e-3 m=1
+Rshort[119] PROBE[119] Q_out[115] 1e-3 m=1
+Rshort[120] PROBE[120] Q_out[116] 1e-3 m=1
+Rshort[121] PROBE[121] Q_out[117] 1e-3 m=1
+Rshort[122] PROBE[122] Q_out[118] 1e-3 m=1
+Rshort[123] PROBE[123] Q_out[119] 1e-3 m=1
+Rshort[124] PROBE[124] Q_out[120] 1e-3 m=1
+.ends
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym # of pins=5
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
+.subckt NO_ClkGen PHI_2 CLK PHI_1 VDDd VSSd
+*.PININFO CLK:I PHI_2:O PHI_1:O VDDd:B VSSd:B
+x1 CLKB OUT_bot_d OUT_top VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 OUT_top PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 PHI_2 net5 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 net3 net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x7 PHI_1 net6 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x8 net4 net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 CLKB CLKbuf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 CLK CLKB VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x11 net5 net3 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x12 net6 net4 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x13 net2 net7 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x15 net1 net8 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x17 net7 net9 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x18 net8 net12 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x14 net9 net10 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x16 net12 net11 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x19 net10 OUT_top_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x20 net11 OUT_bot_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDDd
+* noconn VSSd
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_25/swmatrix_25_by_5.sym # of pins=11
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_25/swmatrix_25_by_5.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_25/swmatrix_25_by_5.sch
+.subckt swmatrix_25_by_5 D_in D_out PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11]
++ BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[1] PIN[2] PIN[3]
++ PIN[4] PIN[5] VDDd VSSd enable Q_out[1] Q_out[2] Q_out[3] Q_out[4] Q_out[5] Q_out[6] Q_out[7] Q_out[8] Q_out[9] Q_out[10] Q_out[11]
++ Q_out[12] Q_out[13] Q_out[14] Q_out[15] Q_out[16] Q_out[17] Q_out[18] Q_out[19] Q_out[20] Q_out[21] Q_out[22] Q_out[23] Q_out[24] Q_out[25]
++ Q_out[26] Q_out[27] Q_out[28] Q_out[29] Q_out[30] Q_out[31] Q_out[32] Q_out[33] Q_out[34] Q_out[35] Q_out[36] Q_out[37] Q_out[38] Q_out[39]
++ Q_out[40] Q_out[41] Q_out[42] Q_out[43] Q_out[44] Q_out[45] Q_out[46] Q_out[47] Q_out[48] Q_out[49] Q_out[50] Q_out[51] Q_out[52] Q_out[53]
++ Q_out[54] Q_out[55] Q_out[56] Q_out[57] Q_out[58] Q_out[59] Q_out[60] Q_out[61] Q_out[62] Q_out[63] Q_out[64] Q_out[65] Q_out[66] Q_out[67]
++ Q_out[68] Q_out[69] Q_out[70] Q_out[71] Q_out[72] Q_out[73] Q_out[74] Q_out[75] Q_out[76] Q_out[77] Q_out[78] Q_out[79] Q_out[80] Q_out[81]
++ Q_out[82] Q_out[83] Q_out[84] Q_out[85] Q_out[86] Q_out[87] Q_out[88] Q_out[89] Q_out[90] Q_out[91] Q_out[92] Q_out[93] Q_out[94] Q_out[95]
++ Q_out[96] Q_out[97] Q_out[98] Q_out[99] Q_out[100] Q_out[101] Q_out[102] Q_out[103] Q_out[104] Q_out[105] Q_out[106] Q_out[107] Q_out[108]
++ Q_out[109] Q_out[110] Q_out[111] Q_out[112] Q_out[113] Q_out[114] Q_out[115] Q_out[116] Q_out[117] Q_out[118] Q_out[119] Q_out[120]
++ D_out_row[1] D_out_row[2] D_out_row[3] D_out_row[4]
+*.PININFO PIN[1:5]:B BUS[1:25]:B PHI_1:I PHI_2:I D_in:I Q_out[1:120]:B VDDd:B VSSd:B enable:I D_out:B D_out_row[1:4]:B
+xswmatrix_row[1] D_in D_out_row[1] PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11]
++ BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[1] VDDd VSSd enable
++ Q_out[1] Q_out[2] Q_out[3] Q_out[4] Q_out[5] Q_out[6] Q_out[7] Q_out[8] Q_out[9] Q_out[10] Q_out[11] Q_out[12] Q_out[13] Q_out[14]
++ Q_out[15] Q_out[16] Q_out[17] Q_out[18] Q_out[19] Q_out[20] Q_out[21] Q_out[22] Q_out[23] Q_out[24] swmatrix_row_25
+xswmatrix_row[2] D_out_row[1] D_out_row[2] PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ BUS[11] BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[2] VDDd VSSd
++ enable Q_out[25] Q_out[26] Q_out[27] Q_out[28] Q_out[29] Q_out[30] Q_out[31] Q_out[32] Q_out[33] Q_out[34] Q_out[35] Q_out[36] Q_out[37]
++ Q_out[38] Q_out[39] Q_out[40] Q_out[41] Q_out[42] Q_out[43] Q_out[44] Q_out[45] Q_out[46] Q_out[47] Q_out[48] swmatrix_row_25
+xswmatrix_row[3] D_out_row[2] D_out_row[3] PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ BUS[11] BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[3] VDDd VSSd
++ enable Q_out[49] Q_out[50] Q_out[51] Q_out[52] Q_out[53] Q_out[54] Q_out[55] Q_out[56] Q_out[57] Q_out[58] Q_out[59] Q_out[60] Q_out[61]
++ Q_out[62] Q_out[63] Q_out[64] Q_out[65] Q_out[66] Q_out[67] Q_out[68] Q_out[69] Q_out[70] Q_out[71] Q_out[72] swmatrix_row_25
+xswmatrix_row[4] D_out_row[3] D_out_row[4] PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ BUS[11] BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[4] VDDd VSSd
++ enable Q_out[73] Q_out[74] Q_out[75] Q_out[76] Q_out[77] Q_out[78] Q_out[79] Q_out[80] Q_out[81] Q_out[82] Q_out[83] Q_out[84] Q_out[85]
++ Q_out[86] Q_out[87] Q_out[88] Q_out[89] Q_out[90] Q_out[91] Q_out[92] Q_out[93] Q_out[94] Q_out[95] Q_out[96] swmatrix_row_25
+xswmatrix_row[5] D_out_row[4] D_out PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11]
++ BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] PIN[5] VDDd VSSd enable
++ Q_out[97] Q_out[98] Q_out[99] Q_out[100] Q_out[101] Q_out[102] Q_out[103] Q_out[104] Q_out[105] Q_out[106] Q_out[107] Q_out[108] Q_out[109]
++ Q_out[110] Q_out[111] Q_out[112] Q_out[113] Q_out[114] Q_out[115] Q_out[116] Q_out[117] Q_out[118] Q_out[119] Q_out[120] swmatrix_row_25
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/swmatrix_row_25/swmatrix_row_25.sym # of pins=10
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_row_25/swmatrix_row_25.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_row_25/swmatrix_row_25.sch
+.subckt swmatrix_row_25 D_in D_out PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11]
++ BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] pin VDDd VSSd enable Q[1]
++ Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19] Q[20] Q[21] Q[22] Q[23] Q[24]
+*.PININFO pin:B PHI_2:I PHI_1:I BUS[1:25]:B D_in:I Q[1:24]:B VDDd:B VSSd:B enable:I D_out:O
+xSR Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19] Q[20] Q[21] Q[22]
++ Q[23] Q[24] D_out D_in PHI_1 PHI_2 VDDd VSSd ShiftReg_row_25
+xTgates[1] Q[1] BUS[1] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[2] Q[2] BUS[2] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[3] Q[3] BUS[3] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[4] Q[4] BUS[4] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[5] Q[5] BUS[5] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[6] Q[6] BUS[6] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[7] Q[7] BUS[7] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[8] Q[8] BUS[8] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[9] Q[9] BUS[9] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[10] Q[10] BUS[10] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[11] Q[11] BUS[11] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[12] Q[12] BUS[12] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[13] Q[13] BUS[13] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[14] Q[14] BUS[14] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[15] Q[15] BUS[15] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[16] Q[16] BUS[16] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[17] Q[17] BUS[17] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[18] Q[18] BUS[18] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[19] Q[19] BUS[19] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[20] Q[20] BUS[20] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[21] Q[21] BUS[21] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[22] Q[22] BUS[22] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[23] Q[23] BUS[23] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[24] Q[24] BUS[24] pin VDDd VSSd enable swmatrix_Tgate
+xTgates[25] D_out BUS[25] pin VDDd VSSd enable swmatrix_Tgate
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sch
+.subckt ShiftReg_row_25 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19]
++ Q[20] Q[21] Q[22] Q[23] Q[24] Q[25] D_in PHI_1 PHI_2 VDDd VSSd
+*.PININFO PHI_1:I PHI_2:I D_in:I Q[1:25]:O VDDd:B VSSd:B
+xFF[1] D_in Q[1] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[2] Q[1] Q[2] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[3] Q[2] Q[3] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[4] Q[3] Q[4] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[5] Q[4] Q[5] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[6] Q[5] Q[6] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[7] Q[6] Q[7] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[8] Q[7] Q[8] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[9] Q[8] Q[9] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[10] Q[9] Q[10] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[11] Q[10] Q[11] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[12] Q[11] Q[12] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[13] Q[12] Q[13] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[14] Q[13] Q[14] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[15] Q[14] Q[15] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[16] Q[15] Q[16] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[17] Q[16] Q[17] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[18] Q[17] Q[18] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[19] Q[18] Q[19] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[20] Q[19] Q[20] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[21] Q[20] Q[21] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[22] Q[21] Q[22] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[23] Q[22] Q[23] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[24] Q[23] Q[24] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[25] Q[24] Q[25] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
+.subckt swmatrix_Tgate control T2 T1 VDDd VSSd enable
+*.PININFO T1:B T2:B VDDd:B VSSd:B control:I enable:I
+M1 T1 gated_control T2 VSSd nmos_3p3 L=0.28u W=mn_w nf=6 m=1
+M2 T1 gated_controlb T2 VDDd pmos_3p3 L=0.28u W=mp_w nf=6 m=1
+**** begin user architecture code
+
+
+.param mn_w=24u
+.param mp_w=72u
+
+**** end user architecture code
+x1 gated_control gated_controlb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 control enable net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 net1 gated_control VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VDDd VSSd
+*.PININFO D:I PHI_1:I PHI_2:I Q:O VDDd:B VSSd:B
+xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+* noconn VSSd
+* noconn VDDd
+.ends
+
