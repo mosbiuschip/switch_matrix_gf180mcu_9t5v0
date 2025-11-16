@@ -55,8 +55,8 @@ C {opin.sym} 1410 680 0 0 {name=p1 lab=data_out}
 C {opin.sym} 1410 880 0 0 {name=p2 lab=PHI_1}
 C {opin.sym} 1410 930 0 0 {name=p8 lab=PHI_2}
 C {opin.sym} 1410 990 0 0 {name=p9 lab=enable_out}
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/and2_4.sym} 480 680 0 0 {name=x11 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/and2_4.sym} 490 880 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_4.sym} 480 680 0 0 {name=x11 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_4.sym} 490 880 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 240 860 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 240 660 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 640 680 0 0 {name=p4 sig_type=std_logic lab=data_gated}
