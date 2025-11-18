@@ -11,8 +11,8 @@ ypos2=6.75
 divy=5
 subdivy=1
 unity=1
-x1=-1.75e-08
-x2=3.325e-07
+x1=0
+x2=1.1e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -83,11 +83,11 @@ N -85 -182.5 5 -182.5 {lab=data}
 N 75 -182.5 145 -182.5 {lab=datab}
 N -85 -110 5 -110 {lab=clock}
 N 75 -110 145 -110 {lab=clockb}
-N 1305.625 -145.625 1305.625 -145 {lab=BUS[1:10]}
+N 1305.625 -145.625 1305.625 -145 {lab=BUS[1:25]}
 N 1305.625 -125.625 1305.625 -125 {lab=PIN[1:5]}
 N 1255 -165 1305.625 -165 {lab=D_out}
-N 1305.625 -145 1407.5 -145 {lab=BUS[1:10]}
-N 1255 -145 1305.625 -145 {lab=BUS[1:10]}
+N 1305.625 -145 1407.5 -145 {lab=BUS[1:25]}
+N 1255 -145 1305.625 -145 {lab=BUS[1:25]}
 N 1305.625 -125 1407.5 -125 {lab=PIN[1:5]}
 N 1255 -125 1305.625 -125 {lab=PIN[1:5]}
 N 1305.625 -165 1407.5 -165 {lab=D_out}
@@ -154,7 +154,7 @@ C {devices/code_shown.sym} -765 541.25 0 0 {name=Simulation only_toplevel=false 
 .control
     * OP
     save all
-    TRAN 0.2n 350n
+    TRAN 0.2n 1.1u
     write tb_swmatrix.raw
 
 .endc
@@ -190,8 +190,7 @@ C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 947.5 -165 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_10/swmatrix_5_by_10.sym} 1105 -145 0 0 {name=xSWMATRIX}
-C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:10]}
+C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:25]}
 C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:5]}
 C {noconn.sym} 1407.5 -165 0 1 {name=l3}
 C {noconn.sym} 1407.5 -145 0 1 {name=l4}
@@ -224,3 +223,4 @@ C {devices/vsource.sym} -37.5 17.5 0 0 {name=Venable value=0 savecurrent=false}
 C {lab_pin.sym} 655.625 -160 0 0 {name=p10 sig_type=std_logic lab=PHI_1_gen}
 C {lab_pin.sym} 650 -110 0 0 {name=p12 sig_type=std_logic lab=PHI_2_gen}
 C {lab_pin.sym} 641.25 -50 0 0 {name=p13 sig_type=std_logic lab=enable_gen}
+C {switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_25/swmatrix_25_by_5.sym} 1105 -145 0 0 {name=x11}

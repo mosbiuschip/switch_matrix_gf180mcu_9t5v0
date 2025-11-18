@@ -83,13 +83,13 @@ N -85 -182.5 5 -182.5 {lab=data}
 N 75 -182.5 145 -182.5 {lab=datab}
 N -85 -110 5 -110 {lab=clock}
 N 75 -110 145 -110 {lab=clockb}
-N 1305.625 -145.625 1305.625 -145 {lab=BUS[1:10]}
-N 1305.625 -125.625 1305.625 -125 {lab=PIN[1:5]}
+N 1305.625 -145.625 1305.625 -145 {lab=BUS[1:25]}
+N 1305.625 -125.625 1305.625 -125 {lab=PIN[1:130]}
 N 1255 -165 1305.625 -165 {lab=D_out}
-N 1305.625 -145 1407.5 -145 {lab=BUS[1:10]}
-N 1255 -145 1305.625 -145 {lab=BUS[1:10]}
-N 1305.625 -125 1407.5 -125 {lab=PIN[1:5]}
-N 1255 -125 1305.625 -125 {lab=PIN[1:5]}
+N 1305.625 -145 1407.5 -145 {lab=BUS[1:25]}
+N 1255 -145 1305.625 -145 {lab=BUS[1:25]}
+N 1305.625 -125 1407.5 -125 {lab=PIN[1:130]}
+N 1255 -125 1305.625 -125 {lab=PIN[1:130]}
 N 1305.625 -165 1407.5 -165 {lab=D_out}
 N 780 -110 802.5 -110 {lab=#net1}
 N 780 -160 802.5 -160 {lab=#net2}
@@ -190,9 +190,9 @@ C {lab_wire.sym} 132.5 -110 0 0 {name=p4 sig_type=std_logic lab=clockb
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 185 -110 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 947.5 -165 0 0 {name=p5 sig_type=std_logic lab=data_in}
 C {lab_wire.sym} 250 -145 0 0 {name=p7 sig_type=std_logic lab=clock_in}
-C {switch_matrix_gf180mcu_9t5v0/swmatrix_5_by_10/swmatrix_5_by_10.sym} 1105 -145 0 0 {name=xSWMATRIX}
-C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:10]}
-C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:5]}
+C {switch_matrix_gf180mcu_9t5v0/swmatrix_130_by_25/swmatrix_25_by_130.sym} 1105 -145 0 0 {name=xSWMATRIX}
+C {lab_wire.sym} 1311.25 -145 0 1 {name=p8 sig_type=std_logic lab=BUS[1:25]}
+C {lab_wire.sym} 1311.25 -125 0 1 {name=p9 sig_type=std_logic lab=PIN[1:130]}
 C {noconn.sym} 1407.5 -165 0 1 {name=l3}
 C {noconn.sym} 1407.5 -145 0 1 {name=l4}
 C {noconn.sym} 1407.5 -125 0 1 {name=l5}
