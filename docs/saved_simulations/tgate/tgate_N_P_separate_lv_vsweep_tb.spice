@@ -1,0 +1,98 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/tgate_PK/tgate_N_P_separate_lv_vsweep_tb.sch
+**.subckt tgate_N_P_separate_lv_vsweep_tb
+Vpow Vdd GND 3.3
+Vin V_in GND 0.1
+Ven en_p GND ven_p
+Ven1 en_n GND ven_n
+I0 V_out1 GND {Iload}
+Vp2 net1 V_out1 0
+.save i(vp2)
+x1 net1 en_n en_p V_in Vdd GND transmission_gate
+I1 V_out1p GND {Iload}
+Vpp net2 V_out1p 0
+.save i(vpp)
+x2v net3 en_n en_p V_in Vdd GND net2 V_in transmission_gate_N_P_separate
+I2 V_out1n GND {Iload}
+Vpn net3 V_out1n 0
+.save i(vpn)
+**** begin user architecture code
+
+
+
+.param temp=27
+.param mn_w=24.0u
+.param mp_w=72.0u
+.param ven_p=0
+.param ven_n=3.3
+
+.param temp=27
+*.param Iload=500u
+.param Iload=10u
+.control
+save all
+
+set num_threads 1
+*dc I0 -5m 5m 1.1u
+dc Vin 0 3.3 0.01
+
+let Ron_N=(V(V_in)-V(V_out1n))/I(Vpn)
+let Ron_P=(V(V_in)-V(V_out1p))/I(Vpp)
+let Gon_N=1/Ron_N
+let Gon_P=1/Ron_P
+let Gon = Gon_N + Gon_P
+let Ron = 1/Gon
+* meas dc Ronmax max Ron
+* print Ronmax
+* plot Ron title 'RON resistance'  ylabel 'Ron'
+* plot Gon_N Gon_P Gon title 'GON conductance'  ylabel 'Gon'
+* wrdata /foss/designs/SSCS-Chipathon-2025_AC3E-Chile-team/xschem/tgate/out_Ron.txt Ron
+write tb_tgate_N_P_separate_typical.raw
+.endc
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+*.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate.sch
+.subckt transmission_gate B GN GP A BP BN
+*.iopin B
+*.iopin GN
+*.iopin A
+*.iopin GP
+*.iopin BN
+*.iopin BP
+XM1 A GN B BN nfet_03v3 L=0.28u W=mn_w nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 A GP B BP pfet_03v3 L=0.28u W=mp_w nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate_N_P_separate.sym # of pins=8
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate_N_P_separate.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/tgate_PK/transmission_gate_N_P_separate.sch
+.subckt transmission_gate_N_P_separate Bnmos GN GP Anmos BP BN Bpmos Apmos
+*.iopin Bnmos
+*.iopin GN
+*.iopin Anmos
+*.iopin GP
+*.iopin BN
+*.iopin BP
+*.iopin Apmos
+*.iopin Bpmos
+XM1 Anmos GN Bnmos BN nfet_03v3 L=0.28u W=mn_w nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 Apmos GP Bpmos BP pfet_03v3 L=0.28u W=mp_w nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

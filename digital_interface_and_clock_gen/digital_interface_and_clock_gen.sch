@@ -61,3 +61,4 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 240 860 0 0 {name=x1 VGND=VSS
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 240 660 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 640 680 0 0 {name=p4 sig_type=std_logic lab=data_gated}
 C {lab_wire.sym} 650 880 0 0 {name=p5 sig_type=std_logic lab=clock_gated}
+C {title.sym} 95 1125 0 0 {name=l2 author="Peter Kinget"}
