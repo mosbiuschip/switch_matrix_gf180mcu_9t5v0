@@ -137,7 +137,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_03v3
+model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 725 300 0 0 {name=p20 sig_type=std_logic lab=VDDd}
@@ -152,7 +152,8 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_03v3
+model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 1235 300 0 0 {name=p21 sig_type=std_logic lab=VDDd}
+C {title.sym} 25 405 0 0 {name=l3 author="Peter Kinget"}

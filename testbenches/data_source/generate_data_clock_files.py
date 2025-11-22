@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ls #!/usr/bin/env python3
 """
 Script to generate clock and data files for circuit simulation.
 

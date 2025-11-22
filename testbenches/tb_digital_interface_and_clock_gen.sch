@@ -11,8 +11,8 @@ ypos2=2.6149052
 divy=5
 subdivy=1
 unity=1
-x1=7.1141061e-07
-x2=1.7596959e-06
+x1=2.2948276e-06
+x2=2.7141418e-06
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -113,7 +113,7 @@ format="tcleval( @value )"
 value="
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice fs
+.lib $::180MCU_MODELS/sm141064.ngspice ff
 "}
 C {launcher.sym} 555 90 0 0 {name=h5
 descr="load waves" 
