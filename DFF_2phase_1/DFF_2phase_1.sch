@@ -18,8 +18,8 @@ N 430 -40 470 -40 {lab=Q}
 N 20 60 47.5 60 {lab=VDDd}
 N 47.5 58.75 47.5 60 {lab=VDDd}
 N 20 80 47.5 80 {lab=VSSd}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/latq_1.sym} 120 -30 0 0 {name=xmain VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/latq_1.sym} 340 -30 0 0 {name=xsecondary VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/latq_1.sym} 120 -30 0 0 {name=xmain VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/latq_1.sym} 340 -30 0 0 {name=xsecondary VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 240 -40 0 0 {name=p1 sig_type=std_logic lab=out_m}
 C {ipin.sym} -20 -40 0 0 {name=p2 lab=D}
 C {ipin.sym} -20 0 0 0 {name=p3 lab=PHI_1}

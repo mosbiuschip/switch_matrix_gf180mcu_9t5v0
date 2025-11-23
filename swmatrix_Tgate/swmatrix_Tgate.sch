@@ -70,13 +70,13 @@ spiceprefix=X
 C {code_shown.sym} -127.5 -479.375 0 0 {name=Parameters only_toplevel=false value="
 .param mn_w=24u
 .param mp_w=72u"}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 223.75 -281.875 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 223.75 -281.875 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 263.75 -281.875 1 0 {name=p14 sig_type=std_logic lab=gated_controlb}
 C {lab_wire.sym} 240 -130 0 1 {name=p7 sig_type=std_logic lab=gated_controlb
 }
 C {lab_wire.sym} -140 -130 0 0 {name=p5 sig_type=std_logic lab=gated_control}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} -36.875 -281.875 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} -36.875 -281.875 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {ipin.sym} -136.25 -301.875 0 0 {name=p4 lab=control}
 C {ipin.sym} -136.25 -261.875 0 0 {name=p6 lab=enable}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 77.5 -281.875 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 77.5 -281.875 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 122.5 -281.875 1 0 {name=p8 sig_type=std_logic lab=gated_control}
