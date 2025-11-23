@@ -34,7 +34,7 @@ N 1920 -130 1920 -120 {lab=PIN[1:62]}
 N 1930 -180 1930 -110 {lab=PIN[1:130]}
 N 1930 -180 1970 -180 {lab=PIN[1:130]}
 N 425 -170 960 -170 {lab=data_in}
-N 810 -110 960 -110 {lab=enable_in}
+N 812.5 -110 960 -110 {lab=enable_in}
 N 680 -10 900 -10 {lab=VSSd}
 N 500 -260 530 -260 {lab=VSSd}
 N 500 -340 500 -260 {lab=VSSd}
@@ -49,13 +49,12 @@ N 450 -380 450 -150 {lab=#net1}
 N 465 -300 530 -300 {lab=#net2}
 N 465 -300 465 -130 {lab=#net2}
 N 425 -130 465 -130 {lab=#net2}
-N 830 -300 830 -130 {lab=PHI_2_in}
 N 830 -380 850 -380 {lab=PHI_1_in}
 N 850 -380 850 -150 {lab=PHI_1_in}
 N 850 -150 960 -150 {lab=PHI_1_in}
-N 830 -130 960 -130 {lab=PHI_2_in}
-N 500 -260 500 -10 {lab=VSSd}
-N 480 -280 480 -30 {lab=VDDd}
+N 840 -130 960 -130 {lab=PHI_2_in}
+N 500 -187.5 500 -10 {lab=VSSd}
+N 480 -207.5 480 -30 {lab=VDDd}
 N 1250 120 1460 120 {lab=BUS[1:25]}
 N 1250 100 1470 100 {lab=D_out}
 N 870 100 950 100 {lab=D_out1}
@@ -73,12 +72,25 @@ N 85 -10 500 -10 {lab=VSSd}
 N 105 -30 480 -30 {lab=VDDd}
 N 480 -30 700 -30 {lab=VDDd}
 N 500 -10 680 -10 {lab=VSSd}
-N 425 -110 810 -110 {lab=enable_in}
 N 1240 140 1310 140 {lab=PIN[63:130]}
 N 1250 180 1490 180 {lab=Q_out2[1:1632]}
 N 1250 200 1490 200 {lab=D_out_row2[1:67],D_out}
 N 1780 -50 1780 180 {lab=PROBE[1551:3250]}
 N 1740 -50 1780 -50 {lab=PROBE[1551:3250]}
+N 425 -110 517.5 -110 {lab=#net3}
+N 517.5 -227.5 517.5 -110 {lab=#net3}
+N 517.5 -227.5 540 -227.5 {lab=#net3}
+N 830 -300 840 -300 {lab=PHI_2_in}
+N 840 -300 840 -130 {lab=PHI_2_in}
+N 830 -227.5 830 -140 {lab=enable_in}
+N 812.5 -140 830 -140 {lab=enable_in}
+N 812.5 -140 812.5 -110 {lab=enable_in}
+N 480 -207.5 530 -207.5 {lab=VDDd}
+N 500 -187.5 530 -187.5 {lab=VSSd}
+N 830 -130 840 -130 {lab=PHI_2_in}
+N 810 -110 812.5 -110 {lab=enable_in}
+N 480 -280 480 -207.5 {lab=VDDd}
+N 500 -260 500 -187.5 {lab=VSSd}
 C {lab_wire.sym} 950 -150 0 0 {name=p6 sig_type=std_logic lab=PHI_1_in}
 C {lab_wire.sym} 950 -130 0 0 {name=p17 sig_type=std_logic lab=PHI_2_in}
 C {lab_wire.sym} 880 100 0 1 {name=p20 sig_type=std_logic lab=D_out1}
@@ -118,3 +130,4 @@ C {switch_matrix_gf180mcu_9t5v0/swmatrix_68_by_25/swmatrix_68_by_25.sym} 1100 12
 C {switch_matrix_gf180mcu_9t5v0/probe_connector_25/probe_connector_25.sym} 1630 190 0 0 {name=xConnector1[1:68]}
 C {lab_wire.sym} 1310 180 0 1 {name=p22 sig_type=std_logic lab=Q_out2[1:1632]}
 C {lab_wire.sym} 1290 200 0 1 {name=p27 sig_type=std_logic lab=D_out_row2[1:67],D_out}
+C {switch_matrix_gf180mcu_9t5v0/PHI_CLK_buf/PHI_CLK_buf.sym} 680 -207.5 0 0 {name=x3}
