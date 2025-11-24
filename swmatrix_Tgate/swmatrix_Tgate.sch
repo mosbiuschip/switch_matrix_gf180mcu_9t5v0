@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 T {3.3V Devices
-Default sizing should give 100 Ohm resistance} 105 -465.625 0 0 0.3 0.3 {}
+New sizing 2025/11/23 should give 50 Ohm resistance nominal} 105 -465.625 0 0 0.3 0.3 {}
 N -140 -130 -100 -130 {
 lab=gated_control}
 N -60 -190 -60 -160 {
@@ -68,8 +68,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {code_shown.sym} -127.5 -479.375 0 0 {name=Parameters only_toplevel=false value="
-.param mn_w=24u
-.param mp_w=72u"}
+.param mn_w=48u
+.param mp_w=144u"}
 C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 223.75 -281.875 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 263.75 -281.875 1 0 {name=p14 sig_type=std_logic lab=gated_controlb}
 C {lab_wire.sym} 240 -130 0 1 {name=p7 sig_type=std_logic lab=gated_controlb
