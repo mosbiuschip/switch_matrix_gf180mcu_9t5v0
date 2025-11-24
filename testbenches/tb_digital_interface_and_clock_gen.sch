@@ -4,15 +4,14 @@ K {}
 V {}
 S {}
 E {}
-B 2 727.5 80 1903.75 1225 {flags=graph
+B 2 697.5 70 2413.75 1775 {flags=graph
 y1=0
-ypos1=-0.085095275
-ypos2=2.6149052
-divy=5
+ypos1=0
+ypos2=2.7
 subdivy=1
 unity=1
-x1=2.2948276e-06
-x2=2.7141418e-06
+x1=0
+x2=2.5e-05
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -20,29 +19,27 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-linewidth_mult=2.5
+linewidth_mult=4
 rainbow=0
 autoload=1
 digital=1
 sim_type=tran
 rawfile=$netlist_dir/tb_digital_interface_and_clock_gen.raw
-hilight_wave=17
+hilight_wave=-1
 xlabmag=0.5
 mode=Line
-y2=2.7
 legend=0
-color="4 5 6 7 8 9 10 11 12 13 14"
+divy=5
+y2=2.7
+color="4 5 6 7 8 9 10 11"
 node="enable
 enable_out
-clock
-phi_2
-phi_1
-d_out
 data
-x1.xno_clkgen.out_bot_d
-x1.xno_clkgen.out_bot
-x1.xno_clkgen.out_top
-x1.xno_clkgen.out_top_d"}
+x1.data_gated
+clock
+x1.clock_gated
+phi_1
+phi_2"}
 T {Testing digital_interface_and_clock_generation
 - checking non-overlap times
 - clock and data read from a file (see code block)
@@ -104,7 +101,7 @@ C {devices/code_shown.sym} -767.5 581.25 0 0 {name=Simulation only_toplevel=fals
     * save v(xswmatrix.xswmatrix_row[*].q[*]) -- DOES NOT WORK !!
     save all
 * Save commands have to go before the TRAN command or ngspice saves everything ... 
-    TRAN 0.1n 5u
+    TRAN 0.1n 25u
     write tb_digital_interface_and_clock_gen.raw
 .endc
 "}
@@ -114,10 +111,11 @@ value="
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice ff
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
 "}
 C {launcher.sym} 555 90 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_swmatrix.raw tran"
+tclcommand="xschem raw_read $netlist_dir/tb_digital_interface_and_clock_gen.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
 C {lab_wire.sym} 780 -150 0 1 {name=p20 sig_type=std_logic lab=D_out}
@@ -143,7 +141,7 @@ aclock [ clock_node ] clock_vector
 aconvert [ bit_node clock_node ] [ data clock ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
 "}
-C {devices/vsource.sym} 80 -110 0 0 {name=Venable value="PULSE(3.3 0 0 0.1n 0.1n 20u 50u)" savecurrent=false}
+C {devices/vsource.sym} 80 -110 0 0 {name=Venable value="PULSE(3.3 0 0 0.1n 0.1n 19.75u 50u)" savecurrent=false}
 C {res.sym} 290 -190 1 1 {name=R2
 value=1k
 footprint=1206

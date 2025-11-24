@@ -1,0 +1,4 @@
+* Xschem symbol placeholder
+.subckt DFF CLK D QB
+* symbol netlist interface
+.ends
