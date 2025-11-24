@@ -8,7 +8,7 @@ T {Shift Register with 25 registers
 - driven by non-overlapping clocks 
 - version with all outputs pinned out} -310 -190 0 0 0.4 0.4 {}
 N 240 -30 320 -30 {lab=Q[1:25]}
-N -120 -30 -60 -30 {lab=D_in,Q[1:9]}
+N -120 -30 -60 -30 {lab=D_in,Q[1:24]}
 N -240 -10 -60 -10 {lab=PHI_1}
 N -240 10 -60 10 {lab=PHI_2}
 N -240 -30 -210 -30 {lab=D_in}

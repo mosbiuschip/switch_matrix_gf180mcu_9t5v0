@@ -1,0 +1,39 @@
+*-------------------------------------------------------------
+* Behavioral two-phase DFF (pin compatible)
+*   .subckt DFF_2phase D Q PHI_1 PHI_2
+*   data is captured on PHI_1 (master latch enable)
+*   data is transferred to Q on PHI_2 (slave latch enable)
+*-------------------------------------------------------------
+.subckt DFF_2phase D Q PHI_1 PHI_2
+
+* Analog→Digital bridges (bracketed ports!)
+a_d     [D]     [d_d]     a2d
+a_p1    [PHI_1] [d_p1]    a2d
+a_p2    [PHI_2] [d_p2]    a2d
+
+* Internal digital wires
+* Provide explicit digital 0/1 generators for SET/RESET=0 (unused)
+a_dzero [vss]   [d_zero]  a2d
+a_done  [vdd]   [d_one]   a2d
+
+* Master latch (level-sensitive on PHI_1)
+a_m d_d d_p1 d_zero d_zero d_m d_mn lm
+.model lm d_dlatch(data_delay=100p enable_delay=100p rise_delay=50p fall_delay=50p)
+
+* Slave latch (level-sensitive on PHI_2)
+a_s d_m d_p2 d_zero d_zero d_q d_qn ls
+.model ls d_dlatch(data_delay=100p enable_delay=100p rise_delay=50p fall_delay=50p)
+
+* Digital→Analog bridge to drive analog Q pin
+a_q [d_q] [Q] d2a
+
+* Simple supplies for the internal a2d references (use your top-level rails)
+* These are only to feed the bridge thresholds; they don't load your design.
+vdd vdd 0 1.8
+vss vss 0 0
+
+* Bridge models (use your logic levels and thresholds)
+.model a2d adc_bridge(in_low=0.4 in_high=1.2)
+.model d2a dac_bridge(out_low=0 out_high=1.8 t_rise=100p t_fall=100p)
+
+.ends DFF_2phase

@@ -108,7 +108,7 @@ C {opin.sym} 1470 -150 0 0 {name=p21 lab=BUS[1:25]
 C {iopin.sym} 75 -70 0 1 {name=p16 lab=VSSd}
 C {iopin.sym} 75 -90 0 1 {name=p25 lab=VDDd}
 C {opin.sym} 1970 -90 0 0 {name=p1 lab=PROBE[1:3250]}
-C {lab_wire.sym} 1300 -70 0 1 {name=p2 sig_type=std_logic lab=D_out_row[1:61],D_out}
+C {lab_wire.sym} 1300 -70 0 1 {name=p2 sig_type=std_logic lab=D_out_row[1:61],D_out1}
 C {lab_wire.sym} 1300 -90 0 1 {name=p13 sig_type=std_logic lab=Q_out[1:1488]}
 C {switch_matrix_gf180mcu_9t5v0/probe_connector_25/probe_connector_25.sym} 1620 -80 0 0 {name=xConnector[1:62]}
 C {switch_matrix_gf180mcu_9t5v0/digital_interface_and_clock_gen/digital_interface_and_clock_gen.sym} 275 -120 0 0 {name=xDIG_and_CLKGEN}

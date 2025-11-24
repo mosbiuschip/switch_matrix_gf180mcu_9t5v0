@@ -1,0 +1,25 @@
+*-------------------------------------------------------------
+* TB for DFF_2phase behavioral model
+* 1 MHz 2-phase clocks with 10 ns non-overlap (T=1 µs)
+* PHI_1 high: 0 .. 490 ns ; PHI_2 high: 510 .. 1000 ns
+*-------------------------------------------------------------
+.include dff_2phase_behave.spice  
+
+* DUT pins
+xdut D Q PHI_1 PHI_2 DFF_2phase
+
+* Clocks (PULSE with non-overlap)
+vphi1 PHI_1 0 PULSE(0 1.8 0      1n 1n 490n 1u)
+vphi2 PHI_2 0 PULSE(0 1.8 510n   1n 1n 490n 1u)
+
+* Data stimulus (toggles every 0.75 us, misaligned to show behavior)
+vD D 0 PULSE(0 1.8 0 1n 1n 375n 750n)
+
+* Save / run
+.control
+  set filetype=ascii
+  tran 1n 4u
+  plot v(D) v(PHI_1)+2 v(PHI_2)+4 v(Q)+6
+  write tb_dff_2phase_behave.raw
+.endc
+.end
