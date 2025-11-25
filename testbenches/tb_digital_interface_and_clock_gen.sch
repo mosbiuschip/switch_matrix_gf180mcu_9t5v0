@@ -4,14 +4,14 @@ K {}
 V {}
 S {}
 E {}
-B 2 697.5 70 2413.75 1775 {flags=graph
+B 2 697.5 70 2883.75 1775 {flags=graph
 y1=0
 ypos1=0
 ypos2=2.7
 subdivy=1
 unity=1
 x1=0
-x2=2.5e-05
+x2=1.7e-05
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -31,7 +31,7 @@ mode=Line
 legend=0
 divy=5
 y2=2.7
-color="4 5 6 7 8 9 10 11"
+color="4 5 6 7 8 9 10 11 12"
 node="enable
 enable_out
 data
@@ -39,7 +39,32 @@ x1.data_gated
 clock
 x1.clock_gated
 phi_1
-phi_2"}
+phi_2
+i(vvddd)"}
+B 2 1490 -420 2290 -20 {flags=graph
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=1.7e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="i(vvddd)
+i(venable)"
+color="4 5"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rawfile=$netlist_dir/tb_digital_interface_and_clock_gen.raw
+autoload=1
+sim_type=tran
+y2=5e-3
+y1=-5e-3}
 T {Testing digital_interface_and_clock_generation
 - checking non-overlap times
 - clock and data read from a file (see code block)
@@ -101,7 +126,7 @@ C {devices/code_shown.sym} -767.5 581.25 0 0 {name=Simulation only_toplevel=fals
     * save v(xswmatrix.xswmatrix_row[*].q[*]) -- DOES NOT WORK !!
     save all
 * Save commands have to go before the TRAN command or ngspice saves everything ... 
-    TRAN 0.1n 25u
+    TRAN 0.1n 17u
     write tb_digital_interface_and_clock_gen.raw
 .endc
 "}
@@ -141,7 +166,7 @@ aclock [ clock_node ] clock_vector
 aconvert [ bit_node clock_node ] [ data clock ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
 "}
-C {devices/vsource.sym} 80 -110 0 0 {name=Venable value="PULSE(3.3 0 0 0.1n 0.1n 19.75u 50u)" savecurrent=false}
+C {devices/vsource.sym} 80 -110 0 0 {name=Venable value="PULSE(3.3 0 0 0.1n 0.1n 14.75u 50u)" savecurrent=false}
 C {res.sym} 290 -190 1 1 {name=R2
 value=1k
 footprint=1206
