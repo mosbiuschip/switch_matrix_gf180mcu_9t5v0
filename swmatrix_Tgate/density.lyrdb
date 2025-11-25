@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>/foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.gds</original-file>
+ <original-file>/foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>swmatrix_Tgate</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -91,7 +67,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.97,3.1;11.97,3.97;2.095,3.97;2.095,5.35;2.495,5.35;2.495,4.4;12.37,4.4;12.37,3.1)</value>
+    <value>polygon: (51.2,51.225;51.2,52.325;51.6,52.325;51.6,51.225)</value>
    </values>
   </item>
   <item>
@@ -103,7 +79,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (1.23,3.1;1.23,6.03;0.53,6.03;0.53,6.425;3.37,6.425;3.37,6.435;3.77,6.435;3.77,6.035;3.38,6.035;3.38,6.03;1.675,6.03;1.675,3.5;5.235,3.5;5.235,3.1)</value>
+    <value>polygon: (52,51.225;52,52.325;52.4,52.325;52.4,51.225)</value>
    </values>
   </item>
   <item>
@@ -115,7 +91,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (4.71,7.5;4.71,7.9;5.11,7.9;5.11,7.5)</value>
+    <value>polygon: (52.8,51.225;52.8,52.325;53.2,52.325;53.2,51.225)</value>
    </values>
   </item>
   <item>
@@ -127,7 +103,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (6.44,7.5;6.44,7.9;6.84,7.9;6.84,7.5)</value>
+    <value>polygon: (53.6,51.225;53.6,52.325;54,52.325;54,51.225)</value>
    </values>
   </item>
   <item>
@@ -139,7 +115,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (8.04,7.5;8.04,7.9;8.44,7.9;8.44,7.5)</value>
+    <value>polygon: (54.4,51.225;54.4,52.325;54.8,52.325;54.8,51.225)</value>
    </values>
   </item>
   <item>
@@ -151,7 +127,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (9.785,7.5;9.785,7.9;10.185,7.9;10.185,7.5)</value>
+    <value>polygon: (55.2,51.225;55.2,52.325;55.6,52.325;55.6,51.225)</value>
    </values>
   </item>
   <item>
@@ -163,7 +139,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.81,7.505;11.81,7.905;12.21,7.905;12.21,7.505)</value>
+    <value>polygon: (56,51.225;56,52.325;56.4,52.325;56.4,51.225)</value>
    </values>
   </item>
   <item>
@@ -175,7 +151,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (13.56,7.505;13.56,7.905;13.96,7.905;13.96,7.505)</value>
+    <value>polygon: (56.8,51.225;56.8,52.325;57.2,52.325;57.2,51.225)</value>
    </values>
   </item>
   <item>
@@ -187,7 +163,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (15.16,7.505;15.16,7.905;15.56,7.905;15.56,7.505)</value>
+    <value>polygon: (57.6,51.225;57.6,52.325;58,52.325;58,51.225)</value>
    </values>
   </item>
   <item>
@@ -199,7 +175,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (16.76,7.505;16.76,7.905;17.16,7.905;17.16,7.505)</value>
+    <value>polygon: (58.4,51.225;58.4,52.325;58.8,52.325;58.8,51.225)</value>
    </values>
   </item>
   <item>
@@ -211,7 +187,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (18.36,7.505;18.36,7.905;18.76,7.905;18.76,7.505)</value>
+    <value>polygon: (59.2,51.225;59.2,52.325;59.6,52.325;59.6,51.225)</value>
    </values>
   </item>
   <item>
@@ -223,7 +199,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (19.96,7.505;19.96,7.905;20.36,7.905;20.36,7.505)</value>
+    <value>polygon: (60,51.225;60,52.325;60.4,52.325;60.4,51.225)</value>
    </values>
   </item>
   <item>
@@ -235,7 +211,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (21.56,7.505;21.56,7.905;21.96,7.905;21.96,7.505)</value>
+    <value>polygon: (60.8,51.225;60.8,52.325;61.2,52.325;61.2,51.225)</value>
    </values>
   </item>
   <item>
@@ -247,7 +223,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (23.16,7.505;23.16,7.905;23.56,7.905;23.56,7.505)</value>
+    <value>polygon: (61.6,51.225;61.6,52.325;62,52.325;62,51.225)</value>
    </values>
   </item>
   <item>
@@ -259,7 +235,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (24.76,7.505;24.76,7.905;25.16,7.905;25.16,7.505)</value>
+    <value>polygon: (62.4,51.225;62.4,52.325;62.8,52.325;62.8,51.225)</value>
    </values>
   </item>
   <item>
@@ -271,7 +247,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.51,7.505;26.51,7.905;26.91,7.905;26.91,7.505)</value>
+    <value>polygon: (63.2,51.225;63.2,52.325;63.6,52.325;63.6,51.225)</value>
    </values>
   </item>
   <item>
@@ -283,7 +259,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (5.64,8.185;5.64,8.585;6.04,8.585;6.04,8.185)</value>
+    <value>polygon: (64,51.225;64,52.325;64.4,52.325;64.4,51.225)</value>
    </values>
   </item>
   <item>
@@ -295,7 +271,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (7.24,8.185;7.24,8.585;7.64,8.585;7.64,8.185)</value>
+    <value>polygon: (64.8,51.225;64.8,52.325;65.2,52.325;65.2,51.225)</value>
    </values>
   </item>
   <item>
@@ -307,7 +283,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (8.84,8.185;8.84,8.585;9.24,8.585;9.24,8.185)</value>
+    <value>polygon: (45.165,53.285;45.165,54.385;45.565,54.385;45.565,53.285)</value>
    </values>
   </item>
   <item>
@@ -319,7 +295,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.76,8.185;12.76,8.585;13.16,8.585;13.16,8.185)</value>
+    <value>polygon: (46.765,53.285;46.765,54.385;47.165,54.385;47.165,53.285)</value>
    </values>
   </item>
   <item>
@@ -331,7 +307,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (14.36,8.185;14.36,8.585;14.76,8.585;14.76,8.185)</value>
+    <value>polygon: (48.365,53.285;48.365,54.385;48.765,54.385;48.765,53.285)</value>
    </values>
   </item>
   <item>
@@ -343,7 +319,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (15.96,8.185;15.96,8.585;16.36,8.585;16.36,8.185)</value>
+    <value>polygon: (51.6,53.285;51.6,54.385;52,54.385;52,53.285)</value>
    </values>
   </item>
   <item>
@@ -355,7 +331,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (17.56,8.185;17.56,8.585;17.96,8.585;17.96,8.185)</value>
+    <value>polygon: (53.2,53.285;53.2,54.385;53.6,54.385;53.6,53.285)</value>
    </values>
   </item>
   <item>
@@ -367,7 +343,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (19.16,8.185;19.16,8.585;19.56,8.585;19.56,8.185)</value>
+    <value>polygon: (54.8,53.285;54.8,54.385;55.2,54.385;55.2,53.285)</value>
    </values>
   </item>
   <item>
@@ -379,7 +355,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (20.76,8.185;20.76,8.585;21.16,8.585;21.16,8.185)</value>
+    <value>polygon: (56.4,53.285;56.4,54.385;56.8,54.385;56.8,53.285)</value>
    </values>
   </item>
   <item>
@@ -391,7 +367,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.36,8.185;22.36,8.585;22.76,8.585;22.76,8.185)</value>
+    <value>polygon: (58,53.285;58,54.385;58.4,54.385;58.4,53.285)</value>
    </values>
   </item>
   <item>
@@ -403,7 +379,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (23.96,8.185;23.96,8.585;24.36,8.585;24.36,8.185)</value>
+    <value>polygon: (59.6,53.285;59.6,54.385;60,54.385;60,53.285)</value>
    </values>
   </item>
   <item>
@@ -415,7 +391,319 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (25.56,8.185;25.56,8.585;25.96,8.585;25.96,8.185)</value>
+    <value>polygon: (61.2,53.285;61.2,54.385;61.6,54.385;61.6,53.285)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (62.8,53.285;62.8,54.385;63.2,54.385;63.2,53.285)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (64.4,53.285;64.4,54.385;64.8,54.385;64.8,53.285)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (42.295,51.225;42.295,57.025;43.395,57.025;43.395,51.225)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (34.18,56.185;34.18,57.285;34.58,57.285;34.58,56.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (35.86,56.905;35.86,57.305;36.26,57.305;36.26,56.905)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (44.225,58.835;44.225,59.935;44.625,59.935;44.625,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (45.965,58.835;45.965,59.935;46.365,59.935;46.365,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (47.565,58.835;47.565,59.935;47.965,59.935;47.965,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (49.305,58.835;49.305,59.935;49.705,59.935;49.705,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (50.64,58.835;50.64,59.935;51.04,59.935;51.04,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (52.4,58.835;52.4,59.935;52.8,59.935;52.8,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (54,58.835;54,59.935;54.4,59.935;54.4,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (55.6,58.835;55.6,59.935;56,59.935;56,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (57.2,58.835;57.2,59.935;57.6,59.935;57.6,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (58.8,58.835;58.8,59.935;59.2,59.935;59.2,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (60.4,58.835;60.4,59.935;60.8,59.935;60.8,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (62,58.835;62,59.935;62.4,59.935;62.4,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (63.6,58.835;63.6,59.935;64,59.935;64,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (65.36,58.835;65.36,59.935;65.76,59.935;65.76,58.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (39.735,56.625;39.735,62.015;40.835,62.015;40.835,56.625)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (44.765,60.915;44.765,62.015;45.165,62.015;45.165,60.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (45.565,60.915;45.565,62.015;45.965,62.015;45.965,60.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (46.365,60.915;46.365,62.015;46.765,62.015;46.765,60.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (47.165,60.915;47.165,62.015;47.565,62.015;47.565,60.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (47.965,60.915;47.965,62.015;48.365,62.015;48.365,60.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>swmatrix_Tgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (48.765,60.915;48.765,62.015;49.165,62.015;49.165,60.915)</value>
    </values>
   </item>
   <item>
@@ -427,7 +715,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (0.53,5.51;0.53,6.01;4.71,6.01;4.71,7.9;5.11,7.9;5.11,6.01;6.44,6.01;6.44,7.9;6.84,7.9;6.84,6.01;8.04,6.01;8.04,7.9;8.44,7.9;8.44,6.01;9.785,6.01;9.785,7.9;10.185,7.9;10.185,6.01;11.81,6.01;11.81,7.905;12.21,7.905;12.21,6.01;13.56,6.01;13.56,7.905;13.96,7.905;13.96,6.01;15.16,6.01;15.16,7.905;15.56,7.905;15.56,6.01;16.76,6.01;16.76,7.905;17.16,7.905;17.16,6.01;18.36,6.01;18.36,7.905;18.76,7.905;18.76,6.01;19.96,6.01;19.96,7.905;20.36,7.905;20.36,6.01;21.56,6.01;21.56,7.905;21.96,7.905;21.96,6.01;23.16,6.01;23.16,7.905;23.56,7.905;23.56,6.01;24.76,6.01;24.76,7.905;25.16,7.905;25.16,6.01;26.51,6.01;26.51,7.905;26.91,7.905;26.91,6.01;27.85,6.01;27.85,5.51)</value>
+    <value>polygon: (42.295,51.225;42.295,52.325;65.2,52.325;65.2,51.225)</value>
    </values>
   </item>
   <item>
@@ -439,7 +727,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (5.64,8.185;5.64,8.585;6.04,8.585;6.04,8.185)</value>
+    <value>polygon: (45.165,53.285;45.165,54.385;64.8,54.385;64.8,53.285)</value>
    </values>
   </item>
   <item>
@@ -451,7 +739,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (7.24,8.185;7.24,8.585;7.64,8.585;7.64,8.185)</value>
+    <value>polygon: (34.18,56.185;34.18,57.285;34.58,57.285;34.58,56.185)</value>
    </values>
   </item>
   <item>
@@ -463,7 +751,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (8.84,8.185;8.84,8.585;9.24,8.585;9.24,8.185)</value>
+    <value>polygon: (44.225,58.835;44.225,59.935;65.76,59.935;65.76,58.835)</value>
    </values>
   </item>
   <item>
@@ -475,115 +763,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.76,8.185;12.76,8.585;13.16,8.585;13.16,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (14.36,8.185;14.36,8.585;14.76,8.585;14.76,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (15.96,8.185;15.96,8.585;16.36,8.585;16.36,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (17.56,8.185;17.56,8.585;17.96,8.585;17.96,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (19.16,8.185;19.16,8.585;19.56,8.585;19.56,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (20.76,8.185;20.76,8.585;21.16,8.585;21.16,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.36,8.185;22.36,8.585;22.76,8.585;22.76,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.96,8.185;23.96,8.585;24.36,8.585;24.36,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.56,8.185;25.56,8.585;25.96,8.585;25.96,8.185)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M4.4'</category>
-   <cell>swmatrix_Tgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (13.935,2.13;13.935,8.185;5.64,8.185;5.64,8.585;13.935,8.585;13.935,9.47;14.435,9.47;14.435,8.585;25.96,8.585;25.96,8.185;14.435,8.185;14.435,7.07;14.43,7.07;14.43,2.13)</value>
+    <value>polygon: (39.735,60.915;39.735,62.015;49.165,62.015;49.165,60.915)</value>
    </values>
   </item>
  </items>

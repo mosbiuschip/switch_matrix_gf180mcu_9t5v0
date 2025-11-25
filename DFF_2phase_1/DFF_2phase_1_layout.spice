@@ -19,10 +19,10 @@ X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=
 X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
 .ends
 
-.subckt DFF_2phase_1 VDD VSS PHI_1 PHI_2 D Q
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q PHI_2 Q VDD
-+ VSS VDD VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q VDD
-+ VSS VDD VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+.subckt DFF_2phase_1 VDDd VSSd PHI_1 PHI_2 D Q
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q PHI_2 Q VDDd
++ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q VDDd
++ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
 .ends
 

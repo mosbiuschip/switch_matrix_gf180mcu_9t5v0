@@ -1,0 +1,115 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_row_25/swmatrix_row_25_w_clkbuf.sch
+
+./include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+.subckt swmatrix_row_25_w_clkbuf D_in D_out PHI_1 PHI_2 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10]
++ BUS[11] BUS[12] BUS[13] BUS[14] BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24] BUS[25] pin VDDd VSSd
++ enable Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19] Q[20] Q[21] Q[22] Q[23]
++ Q[24]
+*.PININFO pin:B PHI_2:I PHI_1:I BUS[1:25]:B D_in:I Q[1:24]:B VDDd:B VSSd:B D_out:O enable:I
+xSR Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19] Q[20] Q[21] Q[22]
++ Q[23] Q[24] D_out D_in PHI_1_buf PHI_2_buf VDDd VSSd ShiftReg_row_25
+xTgates[1] Q[1] BUS[1] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[2] Q[2] BUS[2] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[3] Q[3] BUS[3] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[4] Q[4] BUS[4] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[5] Q[5] BUS[5] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[6] Q[6] BUS[6] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[7] Q[7] BUS[7] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[8] Q[8] BUS[8] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[9] Q[9] BUS[9] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[10] Q[10] BUS[10] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[11] Q[11] BUS[11] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[12] Q[12] BUS[12] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[13] Q[13] BUS[13] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[14] Q[14] BUS[14] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[15] Q[15] BUS[15] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[16] Q[16] BUS[16] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[17] Q[17] BUS[17] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[18] Q[18] BUS[18] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[19] Q[19] BUS[19] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[20] Q[20] BUS[20] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[21] Q[21] BUS[21] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[22] Q[22] BUS[22] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[23] Q[23] BUS[23] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[24] Q[24] BUS[24] pin VDDd VSSd enable_buf swmatrix_Tgate
+xTgates[25] D_out BUS[25] pin VDDd VSSd enable_buf swmatrix_Tgate
+x1 net1 net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x4 PHI_1 net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x5 net2 net3 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+x7 net3 PHI_1_buf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+x9 net4 net5 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x10 PHI_2 net4 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x11 net5 net6 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+x12 net6 PHI_2_buf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+x2 net7 net8 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x3 enable net7 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+x6 net8 net9 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+x8 net9 enable_buf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+.ends
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_25/ShiftReg_row_25.sch
+.subckt ShiftReg_row_25 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16] Q[17] Q[18] Q[19]
++ Q[20] Q[21] Q[22] Q[23] Q[24] Q[25] D_in PHI_1 PHI_2 VDDd VSSd
+*.PININFO PHI_1:I PHI_2:I D_in:I Q[1:25]:O VDDd:B VSSd:B
+xFF[1] D_in Q[1] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[2] Q[1] Q[2] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[3] Q[2] Q[3] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[4] Q[3] Q[4] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[5] Q[4] Q[5] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[6] Q[5] Q[6] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[7] Q[6] Q[7] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[8] Q[7] Q[8] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[9] Q[8] Q[9] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[10] Q[9] Q[10] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[11] Q[10] Q[11] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[12] Q[11] Q[12] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[13] Q[12] Q[13] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[14] Q[13] Q[14] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[15] Q[14] Q[15] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[16] Q[15] Q[16] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[17] Q[16] Q[17] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[18] Q[17] Q[18] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[19] Q[18] Q[19] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[20] Q[19] Q[20] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[21] Q[20] Q[21] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[22] Q[21] Q[22] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[23] Q[22] Q[23] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[24] Q[23] Q[24] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+xFF[25] Q[24] Q[25] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
+.subckt swmatrix_Tgate control T2 T1 VDDd VSSd enable
+*.PININFO T1:B T2:B VDDd:B VSSd:B control:I enable:I
+XM1 T1 gated_control T2 VSSd nfet_03v3 L=0.28u W=48u nf=6 m=1
+XM2 T1 gated_controlb T2 VDDd pfet_03v3 L=0.28u W=144u nf=18 m=1
+**** begin user architecture code
+
+
+.param mn_w=48u
+.param mp_w=144u
+
+**** end user architecture code
+x1 gated_control gated_controlb VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 control enable net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 net1 gated_control VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+
+
+* expanding   symbol:  switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym # of pins=6
+** sym_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VDDd VSSd
+*.PININFO D:I PHI_1:I PHI_2:I Q:O VDDd:B VSSd:B
+xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+xsecondary out_m PHI_2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+* noconn VSSd
+* noconn VDDd
+.ends
+

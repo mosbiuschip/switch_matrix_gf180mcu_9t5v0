@@ -1,0 +1,285 @@
+* NGSPICE file created from swmatrix_row_25_w_clkbuf.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_20 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X1 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X2 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X3 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X4 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X5 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X6 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X7 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X8 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X9 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X10 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X11 VDD I ZN VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X12 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X13 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X14 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X15 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X16 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X17 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X18 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X19 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X20 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X21 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X22 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X23 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X24 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X25 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X26 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X27 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X28 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X29 VSS I ZN VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X30 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X31 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X32 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X33 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X34 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X35 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X36 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X37 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X38 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X39 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+.ends
+
+.subckt pfet a_1534_0# a_2174_0# a_1054_0# a_734_0# a_828_n136# a_28_n136# a_2588_n136#
++ a_1694_0# a_254_0# a_1628_n136# a_894_0# a_188_n136# a_988_n136# a_2814_0# a_2748_n136#
++ a_1788_n136# w_n180_n88# a_2334_0# a_348_n136# a_1214_0# a_1148_n136# a_1854_0#
++ a_414_0# a_2108_n136# a_2494_0# a_n92_0# a_1948_n136# a_1374_0# a_94_0# a_574_0#
++ a_508_n136# a_2268_n136# a_1308_n136# a_2014_0# a_668_n136# a_2428_n136# a_1468_n136#
++ a_2654_0#
+X0 a_1214_0# a_1148_n136# a_1054_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X1 a_2654_0# a_2588_n136# a_2494_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X2 a_734_0# a_668_n136# a_574_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X3 a_2494_0# a_2428_n136# a_2334_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X4 a_254_0# a_188_n136# a_94_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X5 a_574_0# a_508_n136# a_414_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X6 a_2014_0# a_1948_n136# a_1854_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X7 a_1534_0# a_1468_n136# a_1374_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X8 a_1374_0# a_1308_n136# a_1214_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X9 a_1054_0# a_988_n136# a_894_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X10 a_2814_0# a_2748_n136# a_2654_0# w_n180_n88# pfet_03v3 ad=5.2p pd=17.3u as=2.08p ps=8.52u w=8u l=0.28u
+X11 a_894_0# a_828_n136# a_734_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X12 a_2334_0# a_2268_n136# a_2174_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X13 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=5.2p ps=17.3u w=8u l=0.28u
+X14 a_2174_0# a_2108_n136# a_2014_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X15 a_414_0# a_348_n136# a_254_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X16 a_1854_0# a_1788_n136# a_1694_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X17 a_1694_0# a_1628_n136# a_1534_0# w_n180_n88# pfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__nand2_1 A1 A2 VDD VSS ZN VNW VPW
+X0 ZN A2 VDD VNW pfet_05v0 ad=0.4277p pd=2.165u as=0.7238p ps=4.17u w=1.645u l=0.5u
+X1 VDD A1 ZN VNW pfet_05v0 ad=0.7238p pd=4.17u as=0.4277p ps=2.165u w=1.645u l=0.5u
+X2 ZN A1 a_245_69# VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.2112p ps=1.64u w=1.32u l=0.6u
+X3 a_245_69# A2 VSS VPW nfet_05v0 ad=0.2112p pd=1.64u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt nfet a_350_1660# a_734_0# a_254_0# a_894_0# a_510_1660# a_670_1660# a_414_0#
++ a_n84_0# a_94_0# a_574_0# a_830_1660# a_30_1660# a_190_1660# VSUBS
+X0 a_734_0# a_670_1660# a_574_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X1 a_254_0# a_190_1660# a_94_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X2 a_574_0# a_510_1660# a_414_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+X3 a_894_0# a_830_1660# a_734_0# VSUBS nfet_03v3 ad=4.88p pd=17.22u as=2.08p ps=8.52u w=8u l=0.28u
+X4 a_94_0# a_30_1660# a_n84_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=4.88p ps=17.22u w=8u l=0.28u
+X5 a_414_0# a_350_1660# a_254_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
+.ends
+
+.subckt swmatrix_Tgate VDDd control T1 T2 enable VSSd
+Xpfet_0 T1 T1 T2 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN VDDd T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T1 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 pfet
+Xgf180mcu_fd_sc_mcu9t5v0__nand2_1_0 control enable VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1_1/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_1 gf180mcu_fd_sc_mcu9t5v0__inv_1_1/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xnfet_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I T2 T1 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I T2 T1 T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I VSSd nfet
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_8 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X1 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X2 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X3 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X4 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X5 VDD I ZN VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X6 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X7 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X8 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X9 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X10 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X11 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X12 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X13 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X14 VSS I ZN VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X15 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1 D E Q VDD VSS VNW VPW
+X0 VSS a_1020_652# Q VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X1 a_504_110# a_36_92# VDD VNW pfet_05v0 ad=0.44p pd=2.88u as=0.476p ps=2.18u w=1u l=0.5u
+X2 VDD a_1020_652# Q VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X3 a_1264_107# a_36_92# a_1020_652# VPW nfet_05v0 ad=0.263p pd=1.49u as=0.182p ps=1.22u w=0.7u l=0.6u
+X4 VSS E a_36_92# VPW nfet_05v0 ad=0.263p pd=1.49u as=0.3476p ps=2.46u w=0.79u l=0.6u
+X5 VSS a_1364_532# a_1264_107# VPW nfet_05v0 ad=0.2054p pd=1.31u as=0.263p ps=1.49u w=0.79u l=0.6u
+X6 VDD E a_36_92# VNW pfet_05v0 ad=0.476p pd=2.18u as=0.6072p ps=3.64u w=1.38u l=0.5u
+X7 VDD a_1364_532# a_1224_652# VNW pfet_05v0 ad=0.3588p pd=1.9u as=0.426p ps=2.08u w=1.38u l=0.5u
+X8 a_872_652# D VDD VNW pfet_05v0 ad=0.12p pd=1.24u as=0.44p ps=2.88u w=1u l=0.5u
+X9 a_1364_532# a_1020_652# VDD VNW pfet_05v0 ad=0.6072p pd=3.64u as=0.3588p ps=1.9u w=1.38u l=0.5u
+X10 a_1020_652# a_504_110# a_872_107# VPW nfet_05v0 ad=0.182p pd=1.22u as=83.99999f ps=0.94u w=0.7u l=0.6u
+X11 a_872_107# D VSS VPW nfet_05v0 ad=83.99999f pd=0.94u as=0.308p ps=2.28u w=0.7u l=0.6u
+X12 a_1020_652# a_36_92# a_872_652# VNW pfet_05v0 ad=0.26p pd=1.52u as=0.12p ps=1.24u w=1u l=0.5u
+X13 a_504_110# a_36_92# VSS VPW nfet_05v0 ad=0.308p pd=2.28u as=0.263p ps=1.49u w=0.7u l=0.6u
+X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=1.31u w=0.79u l=0.6u
+X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
+.ends
+
+.subckt DFF_2phase_1 D PHI_2 PHI_1 VDDd Q VSSd
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q PHI_2 Q VDDd
++ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q VDDd
++ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.ends
+
+.subckt ShiftReg_row_25 VDDd D_in PHI_2 PHI_1 Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[12]
++ Q[15] Q[17] Q[18] Q[20] Q[21] Q[22] Q[23] Q[9] Q[25] Q[14] Q[11] Q[10] Q[1] Q[24]
++ Q[19] Q[16] Q[13] VSSd
+XDFF_2phase_1_0[0] D_in PHI_2 PHI_1 VDDd Q[1] VSSd DFF_2phase_1
+XDFF_2phase_1_0[1] Q[1] PHI_2 PHI_1 VDDd Q[2] VSSd DFF_2phase_1
+XDFF_2phase_1_0[2] Q[2] PHI_2 PHI_1 VDDd Q[3] VSSd DFF_2phase_1
+XDFF_2phase_1_0[3] Q[3] PHI_2 PHI_1 VDDd Q[4] VSSd DFF_2phase_1
+XDFF_2phase_1_0[4] Q[4] PHI_2 PHI_1 VDDd Q[5] VSSd DFF_2phase_1
+XDFF_2phase_1_0[5] Q[5] PHI_2 PHI_1 VDDd Q[6] VSSd DFF_2phase_1
+XDFF_2phase_1_0[6] Q[6] PHI_2 PHI_1 VDDd Q[7] VSSd DFF_2phase_1
+XDFF_2phase_1_0[7] Q[7] PHI_2 PHI_1 VDDd Q[8] VSSd DFF_2phase_1
+XDFF_2phase_1_0[8] Q[8] PHI_2 PHI_1 VDDd Q[9] VSSd DFF_2phase_1
+XDFF_2phase_1_0[9] Q[9] PHI_2 PHI_1 VDDd Q[10] VSSd DFF_2phase_1
+XDFF_2phase_1_0[10] Q[10] PHI_2 PHI_1 VDDd Q[11] VSSd DFF_2phase_1
+XDFF_2phase_1_0[11] Q[11] PHI_2 PHI_1 VDDd Q[12] VSSd DFF_2phase_1
+XDFF_2phase_1_0[12] Q[12] PHI_2 PHI_1 VDDd Q[13] VSSd DFF_2phase_1
+XDFF_2phase_1_0[13] Q[13] PHI_2 PHI_1 VDDd Q[14] VSSd DFF_2phase_1
+XDFF_2phase_1_0[14] Q[14] PHI_2 PHI_1 VDDd Q[15] VSSd DFF_2phase_1
+XDFF_2phase_1_0[15] Q[15] PHI_2 PHI_1 VDDd Q[16] VSSd DFF_2phase_1
+XDFF_2phase_1_0[16] Q[16] PHI_2 PHI_1 VDDd Q[17] VSSd DFF_2phase_1
+XDFF_2phase_1_0[17] Q[17] PHI_2 PHI_1 VDDd Q[18] VSSd DFF_2phase_1
+XDFF_2phase_1_0[18] Q[18] PHI_2 PHI_1 VDDd Q[19] VSSd DFF_2phase_1
+XDFF_2phase_1_0[19] Q[19] PHI_2 PHI_1 VDDd Q[20] VSSd DFF_2phase_1
+XDFF_2phase_1_0[20] Q[20] PHI_2 PHI_1 VDDd Q[21] VSSd DFF_2phase_1
+XDFF_2phase_1_0[21] Q[21] PHI_2 PHI_1 VDDd Q[22] VSSd DFF_2phase_1
+XDFF_2phase_1_0[22] Q[22] PHI_2 PHI_1 VDDd Q[23] VSSd DFF_2phase_1
+XDFF_2phase_1_0[23] Q[23] PHI_2 PHI_1 VDDd Q[24] VSSd DFF_2phase_1
+XDFF_2phase_1_0[24] Q[24] PHI_2 PHI_1 VDDd Q[25] VSSd DFF_2phase_1
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_4 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X1 VSS I ZN VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X2 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X3 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X4 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X5 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X6 VDD I ZN VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X7 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.8052p ps=4.54u w=1.83u l=0.5u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_12 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X1 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X2 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X3 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X4 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X5 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X6 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X7 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X8 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X9 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X10 VSS I ZN VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X11 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X12 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X13 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X14 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X15 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X16 VDD I ZN VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X17 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X18 VDD I ZN VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X19 ZN I VSS VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X20 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.5673p ps=2.45u w=1.83u l=0.5u
+X21 ZN I VDD VNW pfet_05v0 ad=0.5673p pd=2.45u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X22 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+X23 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
+.ends
+
+.subckt swmatrix_row_25_w_clkbuf VDDd VSSd PHI_1 PHI_2 enable pin BUS[1] BUS[2] BUS[3]
++ BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] BUS[11] BUS[12] BUS[13] BUS[14]
++ BUS[15] BUS[16] BUS[17] BUS[18] BUS[19] BUS[20] BUS[21] BUS[22] BUS[23] BUS[24]
++ BUS[25] Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14]
++ Q[15] Q[16] Q[17] Q[18] Q[19] Q[20] Q[21] Q[22] Q[23] Q[24] D_out D_in
+Xgf180mcu_fd_sc_mcu9t5v0__inv_20_0 gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I VDDd VSSd swmatrix_Tgate_0[9]/enable
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+Xgf180mcu_fd_sc_mcu9t5v0__inv_20_1 gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I VDDd VSSd ShiftReg_row_25_0/PHI_2
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+Xgf180mcu_fd_sc_mcu9t5v0__inv_20_2 gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I VDDd VSSd ShiftReg_row_25_0/PHI_1
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+Xswmatrix_Tgate_0[0] VDDd D_out pin BUS[25] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[1] VDDd Q[24] pin BUS[24] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[2] VDDd Q[23] pin BUS[23] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[3] VDDd Q[22] pin BUS[22] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[4] VDDd Q[21] pin BUS[21] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[5] VDDd Q[20] pin BUS[20] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[6] VDDd Q[19] pin BUS[19] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[7] VDDd Q[18] pin BUS[18] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[8] VDDd Q[17] pin BUS[17] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[9] VDDd Q[16] pin BUS[16] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[10] VDDd Q[15] pin BUS[15] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[11] VDDd Q[14] pin BUS[14] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[12] VDDd Q[13] pin BUS[13] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[13] VDDd Q[12] pin BUS[12] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[14] VDDd Q[11] pin BUS[11] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[15] VDDd Q[10] pin BUS[10] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[16] VDDd Q[9] pin BUS[9] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[17] VDDd Q[8] pin BUS[8] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[18] VDDd Q[7] pin BUS[7] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[19] VDDd Q[6] pin BUS[6] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[20] VDDd Q[5] pin BUS[5] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[21] VDDd Q[4] pin BUS[4] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[22] VDDd Q[3] pin BUS[3] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[23] VDDd Q[2] pin BUS[2] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[24] VDDd Q[1] pin BUS[1] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xgf180mcu_fd_sc_mcu9t5v0__inv_8_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+Xgf180mcu_fd_sc_mcu9t5v0__inv_8_1 gf180mcu_fd_sc_mcu9t5v0__inv_8_1/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_1/ZN
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+Xgf180mcu_fd_sc_mcu9t5v0__inv_8_2 gf180mcu_fd_sc_mcu9t5v0__inv_8_2/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_2/ZN
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+XShiftReg_row_25_0 VDDd D_in ShiftReg_row_25_0/PHI_2 ShiftReg_row_25_0/PHI_1 Q[2]
++ Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[12] Q[15] Q[17] Q[18] Q[20] Q[21] Q[22] Q[23] Q[9]
++ D_out Q[14] Q[11] Q[10] Q[1] Q[24] Q[19] Q[16] Q[13] VSSd ShiftReg_row_25
+Xgf180mcu_fd_sc_mcu9t5v0__inv_4_0 enable VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_0/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+Xgf180mcu_fd_sc_mcu9t5v0__inv_4_1 PHI_2 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_1/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+Xgf180mcu_fd_sc_mcu9t5v0__inv_4_2 PHI_1 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_2/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
+Xgf180mcu_fd_sc_mcu9t5v0__inv_12_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+Xgf180mcu_fd_sc_mcu9t5v0__inv_12_1 gf180mcu_fd_sc_mcu9t5v0__inv_8_1/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+Xgf180mcu_fd_sc_mcu9t5v0__inv_12_2 gf180mcu_fd_sc_mcu9t5v0__inv_8_2/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I
++ VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+.ends
+
