@@ -91,7 +91,7 @@ X4 a_94_0# a_30_1660# a_n84_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=4.88p ps=17.
 X5 a_414_0# a_350_1660# a_254_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
 .ends
 
-.subckt swmatrix_Tgate VDDd control T1 T2 enable VSSd
+.subckt swmatrix_Tgate VDDd T1 T2 enable VSSd control
 Xpfet_0 T1 T1 T2 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
 + gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1
 + gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
@@ -130,7 +130,7 @@ X14 VSS I ZN VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3432p ps=1.84u w=1.32u l=0.6
 X15 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6u
 .ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1 D E Q VDD VSS VNW VPW
+.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1$1 D E Q VDD VSS VNW VPW
 X0 VSS a_1020_652# Q VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
 X1 a_504_110# a_36_92# VDD VNW pfet_05v0 ad=0.44p pd=2.88u as=0.476p ps=2.18u w=1u l=0.5u
 X2 VDD a_1020_652# Q VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
@@ -149,41 +149,41 @@ X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=
 X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
 .ends
 
-.subckt DFF_2phase_1 D PHI_2 PHI_1 VDDd Q VSSd
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q PHI_2 Q VDDd
-+ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q VDDd
-+ VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.subckt DFF_2phase_1 D Q PHI_1 PHI_2 VDDd VSSd
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q PHI_2 Q
++ VDDd VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_1 D PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q
++ VDDd VSSd VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1$1
 .ends
 
-.subckt ShiftReg_row_25 VDDd D_in PHI_2 PHI_1 Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[12]
-+ Q[15] Q[17] Q[18] Q[20] Q[21] Q[22] Q[23] Q[9] Q[25] Q[14] Q[11] Q[10] Q[1] Q[24]
-+ Q[19] Q[16] Q[13] VSSd
-XDFF_2phase_1_0[0] D_in PHI_2 PHI_1 VDDd Q[1] VSSd DFF_2phase_1
-XDFF_2phase_1_0[1] Q[1] PHI_2 PHI_1 VDDd Q[2] VSSd DFF_2phase_1
-XDFF_2phase_1_0[2] Q[2] PHI_2 PHI_1 VDDd Q[3] VSSd DFF_2phase_1
-XDFF_2phase_1_0[3] Q[3] PHI_2 PHI_1 VDDd Q[4] VSSd DFF_2phase_1
-XDFF_2phase_1_0[4] Q[4] PHI_2 PHI_1 VDDd Q[5] VSSd DFF_2phase_1
-XDFF_2phase_1_0[5] Q[5] PHI_2 PHI_1 VDDd Q[6] VSSd DFF_2phase_1
-XDFF_2phase_1_0[6] Q[6] PHI_2 PHI_1 VDDd Q[7] VSSd DFF_2phase_1
-XDFF_2phase_1_0[7] Q[7] PHI_2 PHI_1 VDDd Q[8] VSSd DFF_2phase_1
-XDFF_2phase_1_0[8] Q[8] PHI_2 PHI_1 VDDd Q[9] VSSd DFF_2phase_1
-XDFF_2phase_1_0[9] Q[9] PHI_2 PHI_1 VDDd Q[10] VSSd DFF_2phase_1
-XDFF_2phase_1_0[10] Q[10] PHI_2 PHI_1 VDDd Q[11] VSSd DFF_2phase_1
-XDFF_2phase_1_0[11] Q[11] PHI_2 PHI_1 VDDd Q[12] VSSd DFF_2phase_1
-XDFF_2phase_1_0[12] Q[12] PHI_2 PHI_1 VDDd Q[13] VSSd DFF_2phase_1
-XDFF_2phase_1_0[13] Q[13] PHI_2 PHI_1 VDDd Q[14] VSSd DFF_2phase_1
-XDFF_2phase_1_0[14] Q[14] PHI_2 PHI_1 VDDd Q[15] VSSd DFF_2phase_1
-XDFF_2phase_1_0[15] Q[15] PHI_2 PHI_1 VDDd Q[16] VSSd DFF_2phase_1
-XDFF_2phase_1_0[16] Q[16] PHI_2 PHI_1 VDDd Q[17] VSSd DFF_2phase_1
-XDFF_2phase_1_0[17] Q[17] PHI_2 PHI_1 VDDd Q[18] VSSd DFF_2phase_1
-XDFF_2phase_1_0[18] Q[18] PHI_2 PHI_1 VDDd Q[19] VSSd DFF_2phase_1
-XDFF_2phase_1_0[19] Q[19] PHI_2 PHI_1 VDDd Q[20] VSSd DFF_2phase_1
-XDFF_2phase_1_0[20] Q[20] PHI_2 PHI_1 VDDd Q[21] VSSd DFF_2phase_1
-XDFF_2phase_1_0[21] Q[21] PHI_2 PHI_1 VDDd Q[22] VSSd DFF_2phase_1
-XDFF_2phase_1_0[22] Q[22] PHI_2 PHI_1 VDDd Q[23] VSSd DFF_2phase_1
-XDFF_2phase_1_0[23] Q[23] PHI_2 PHI_1 VDDd Q[24] VSSd DFF_2phase_1
-XDFF_2phase_1_0[24] Q[24] PHI_2 PHI_1 VDDd Q[25] VSSd DFF_2phase_1
+.subckt ShiftReg_row_25 D_in PHI_2 PHI_1 Q[2] Q[4] Q[5] Q[6] Q[7] Q[8] Q[12] Q[15]
++ Q[20] Q[21] Q[22] Q[23] Q[9] Q[25] Q[14] Q[11] Q[1] Q[19] Q[24] Q[18] Q[16] Q[13]
++ Q[10] Q[17] Q[3] VDDd VSSd
+XDFF_2phase_1_0[0] D_in Q[1] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[1] Q[1] Q[2] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[2] Q[2] Q[3] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[3] Q[3] Q[4] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[4] Q[4] Q[5] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[5] Q[5] Q[6] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[6] Q[6] Q[7] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[7] Q[7] Q[8] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[8] Q[8] Q[9] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[9] Q[9] Q[10] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[10] Q[10] Q[11] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[11] Q[11] Q[12] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[12] Q[12] Q[13] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[13] Q[13] Q[14] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[14] Q[14] Q[15] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[15] Q[15] Q[16] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[16] Q[16] Q[17] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[17] Q[17] Q[18] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[18] Q[18] Q[19] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[19] Q[19] Q[20] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[20] Q[20] Q[21] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[21] Q[21] Q[22] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[22] Q[22] Q[23] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[23] Q[23] Q[24] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
+XDFF_2phase_1_0[24] Q[24] Q[25] PHI_1 PHI_2 VDDd VSSd DFF_2phase_1
 .ends
 
 .subckt gf180mcu_fd_sc_mcu9t5v0__inv_4 I VDD VSS ZN VNW VPW
@@ -235,40 +235,40 @@ Xgf180mcu_fd_sc_mcu9t5v0__inv_20_1 gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I VDDd VSSd
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
 Xgf180mcu_fd_sc_mcu9t5v0__inv_20_2 gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I VDDd VSSd ShiftReg_row_25_0/PHI_1
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
-Xswmatrix_Tgate_0[0] VDDd D_out pin BUS[25] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[1] VDDd Q[24] pin BUS[24] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[2] VDDd Q[23] pin BUS[23] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[3] VDDd Q[22] pin BUS[22] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[4] VDDd Q[21] pin BUS[21] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[5] VDDd Q[20] pin BUS[20] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[6] VDDd Q[19] pin BUS[19] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[7] VDDd Q[18] pin BUS[18] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[8] VDDd Q[17] pin BUS[17] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[9] VDDd Q[16] pin BUS[16] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[10] VDDd Q[15] pin BUS[15] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[11] VDDd Q[14] pin BUS[14] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[12] VDDd Q[13] pin BUS[13] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[13] VDDd Q[12] pin BUS[12] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[14] VDDd Q[11] pin BUS[11] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[15] VDDd Q[10] pin BUS[10] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[16] VDDd Q[9] pin BUS[9] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[17] VDDd Q[8] pin BUS[8] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[18] VDDd Q[7] pin BUS[7] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[19] VDDd Q[6] pin BUS[6] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[20] VDDd Q[5] pin BUS[5] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[21] VDDd Q[4] pin BUS[4] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[22] VDDd Q[3] pin BUS[3] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[23] VDDd Q[2] pin BUS[2] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
-Xswmatrix_Tgate_0[24] VDDd Q[1] pin BUS[1] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[0] VDDd pin BUS[25] swmatrix_Tgate_0[9]/enable VSSd D_out swmatrix_Tgate
+Xswmatrix_Tgate_0[1] VDDd pin BUS[24] swmatrix_Tgate_0[9]/enable VSSd Q[24] swmatrix_Tgate
+Xswmatrix_Tgate_0[2] VDDd pin BUS[23] swmatrix_Tgate_0[9]/enable VSSd Q[23] swmatrix_Tgate
+Xswmatrix_Tgate_0[3] VDDd pin BUS[22] swmatrix_Tgate_0[9]/enable VSSd Q[22] swmatrix_Tgate
+Xswmatrix_Tgate_0[4] VDDd pin BUS[21] swmatrix_Tgate_0[9]/enable VSSd Q[21] swmatrix_Tgate
+Xswmatrix_Tgate_0[5] VDDd pin BUS[20] swmatrix_Tgate_0[9]/enable VSSd Q[20] swmatrix_Tgate
+Xswmatrix_Tgate_0[6] VDDd pin BUS[19] swmatrix_Tgate_0[9]/enable VSSd Q[19] swmatrix_Tgate
+Xswmatrix_Tgate_0[7] VDDd pin BUS[18] swmatrix_Tgate_0[9]/enable VSSd Q[18] swmatrix_Tgate
+Xswmatrix_Tgate_0[8] VDDd pin BUS[17] swmatrix_Tgate_0[9]/enable VSSd Q[17] swmatrix_Tgate
+Xswmatrix_Tgate_0[9] VDDd pin BUS[16] swmatrix_Tgate_0[9]/enable VSSd Q[16] swmatrix_Tgate
+Xswmatrix_Tgate_0[10] VDDd pin BUS[15] swmatrix_Tgate_0[9]/enable VSSd Q[15] swmatrix_Tgate
+Xswmatrix_Tgate_0[11] VDDd pin BUS[14] swmatrix_Tgate_0[9]/enable VSSd Q[14] swmatrix_Tgate
+Xswmatrix_Tgate_0[12] VDDd pin BUS[13] swmatrix_Tgate_0[9]/enable VSSd Q[13] swmatrix_Tgate
+Xswmatrix_Tgate_0[13] VDDd pin BUS[12] swmatrix_Tgate_0[9]/enable VSSd Q[12] swmatrix_Tgate
+Xswmatrix_Tgate_0[14] VDDd pin BUS[11] swmatrix_Tgate_0[9]/enable VSSd Q[11] swmatrix_Tgate
+Xswmatrix_Tgate_0[15] VDDd pin BUS[10] swmatrix_Tgate_0[9]/enable VSSd Q[10] swmatrix_Tgate
+Xswmatrix_Tgate_0[16] VDDd pin BUS[9] swmatrix_Tgate_0[9]/enable VSSd Q[9] swmatrix_Tgate
+Xswmatrix_Tgate_0[17] VDDd pin BUS[8] swmatrix_Tgate_0[9]/enable VSSd Q[8] swmatrix_Tgate
+Xswmatrix_Tgate_0[18] VDDd pin BUS[7] swmatrix_Tgate_0[9]/enable VSSd Q[7] swmatrix_Tgate
+Xswmatrix_Tgate_0[19] VDDd pin BUS[6] swmatrix_Tgate_0[9]/enable VSSd Q[6] swmatrix_Tgate
+Xswmatrix_Tgate_0[20] VDDd pin BUS[5] swmatrix_Tgate_0[9]/enable VSSd Q[5] swmatrix_Tgate
+Xswmatrix_Tgate_0[21] VDDd pin BUS[4] swmatrix_Tgate_0[9]/enable VSSd Q[4] swmatrix_Tgate
+Xswmatrix_Tgate_0[22] VDDd pin BUS[3] swmatrix_Tgate_0[9]/enable VSSd Q[3] swmatrix_Tgate
+Xswmatrix_Tgate_0[23] VDDd pin BUS[2] swmatrix_Tgate_0[9]/enable VSSd Q[2] swmatrix_Tgate
+Xswmatrix_Tgate_0[24] VDDd pin BUS[1] swmatrix_Tgate_0[9]/enable VSSd Q[1] swmatrix_Tgate
 Xgf180mcu_fd_sc_mcu9t5v0__inv_8_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
 Xgf180mcu_fd_sc_mcu9t5v0__inv_8_1 gf180mcu_fd_sc_mcu9t5v0__inv_8_1/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_1/ZN
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
 Xgf180mcu_fd_sc_mcu9t5v0__inv_8_2 gf180mcu_fd_sc_mcu9t5v0__inv_8_2/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_2/ZN
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
-XShiftReg_row_25_0 VDDd D_in ShiftReg_row_25_0/PHI_2 ShiftReg_row_25_0/PHI_1 Q[2]
-+ Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[12] Q[15] Q[17] Q[18] Q[20] Q[21] Q[22] Q[23] Q[9]
-+ D_out Q[14] Q[11] Q[10] Q[1] Q[24] Q[19] Q[16] Q[13] VSSd ShiftReg_row_25
+XShiftReg_row_25_0 D_in ShiftReg_row_25_0/PHI_2 ShiftReg_row_25_0/PHI_1 Q[2] Q[4]
++ Q[5] Q[6] Q[7] Q[8] Q[12] Q[15] Q[20] Q[21] Q[22] Q[23] Q[9] D_out Q[14] Q[11] Q[1]
++ Q[19] Q[24] Q[18] Q[16] Q[13] Q[10] Q[17] Q[3] VDDd VSSd ShiftReg_row_25
 Xgf180mcu_fd_sc_mcu9t5v0__inv_4_0 enable VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_0/I
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
 Xgf180mcu_fd_sc_mcu9t5v0__inv_4_1 PHI_2 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_1/I

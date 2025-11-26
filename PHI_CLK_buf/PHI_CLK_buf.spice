@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/PHI_CLK_buf/PHI_CLK_buf.sch
+
+./include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+.subckt PHI_CLK_buf CLK_buf CLK_in VDDd VSSd
+*.PININFO CLK_in:I CLK_buf:O VDDd:B VSSd:B
+x1 CLK_in net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
+x2 net1 net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
+x4 net3 CLK_buf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+x3 net2 net3 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+x5 net3 CLK_buf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
+* noconn VDDd
+* noconn VSSd
+.ends
