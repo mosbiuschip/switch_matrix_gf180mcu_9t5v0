@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/Schmitt/Schmitt.sch
+.subckt Schmitt VDD Vin Vo VSS
+*.PININFO VDD:I VSS:I Vin:I Vo:O
+XM9 schmitt Vin bot VSS nfet_06v0 L=0.70u W=2u nf=2 m=1
+XM10 schmitt Vin top VDD pfet_06v0 L=0.55u W=6u nf=2 m=1
+XM11 VDD schmitt bot VSS nfet_06v0 L=0.70u W=2u nf=2 m=1
+XM12 top Vin VDD VDD pfet_06v0 L=0.55u W=6u nf=2 m=1
+XM13 Vo schmitt VSS VSS nfet_06v0 L=0.70u W=2u nf=2 m=1
+XM14 Vo schmitt VDD VDD pfet_06v0 L=0.55u W=6u nf=2 m=1
+XM15 VSS schmitt top VDD pfet_06v0 L=0.55u W=6u nf=2 m=1
+XM1 bot Vin VSS VSS nfet_06v0 L=0.70u W=2u nf=2 m=1
+.ends

@@ -1,0 +1,137 @@
+** sch_path: /foss/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
+
+./include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+.subckt NO_ClkGen PHI_2 CLK PHI_1 VDDd VSSd
+*.PININFO CLK:I PHI_2:O PHI_1:O VDDd:B VSSd:B
+x1 CLKB OUT_bot_d OUT_top VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 OUT_top PHI_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 PHI_2 in_d_2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 CLKB CLKbuf VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 CLK CLKB VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDDd
+* noconn VSSd
+xinv1[1] in_d_2 out_2[1] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[2] out_2[1] out_2[2] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[3] out_2[2] out_2[3] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[4] out_2[3] out_2[4] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[5] out_2[4] out_2[5] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[6] out_2[5] out_2[6] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[7] out_2[6] out_2[7] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[8] out_2[7] out_2[8] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[9] out_2[8] out_2[9] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[10] out_2[9] out_2[10] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[11] out_2[10] out_2[11] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[12] out_2[11] out_2[12] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[13] out_2[12] out_2[13] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[14] out_2[13] out_2[14] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[15] out_2[14] out_2[15] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[16] out_2[15] out_2[16] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[17] out_2[16] out_2[17] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[18] out_2[17] out_2[18] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[19] out_2[18] out_2[19] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv1[20] out_2[19] OUT_top_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 PHI_1 in_d_1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[1] in_d_1 out_1[1] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[2] out_1[1] out_1[2] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[3] out_1[2] out_1[3] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[4] out_1[3] out_1[4] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[5] out_1[4] out_1[5] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[6] out_1[5] out_1[6] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[7] out_1[6] out_1[7] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[8] out_1[7] out_1[8] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[9] out_1[8] out_1[9] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[10] out_1[9] out_1[10] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[11] out_1[10] out_1[11] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[12] out_1[11] out_1[12] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[13] out_1[12] out_1[13] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[14] out_1[13] out_1[14] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[15] out_1[14] out_1[15] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[16] out_1[15] out_1[16] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[17] out_1[16] out_1[17] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[18] out_1[17] out_1[18] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[19] out_1[18] out_1[19] VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+xinv2[20] out_1[19] OUT_bot_d VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+XMcapbot[1] VSSd out_1[1] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[2] VSSd out_1[2] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[3] VSSd out_1[3] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[4] VSSd out_1[4] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[5] VSSd out_1[5] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[6] VSSd out_1[6] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[7] VSSd out_1[7] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[8] VSSd out_1[8] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[9] VSSd out_1[9] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[10] VSSd out_1[10] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[11] VSSd out_1[11] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[12] VSSd out_1[12] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[13] VSSd out_1[13] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[14] VSSd out_1[14] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[15] VSSd out_1[15] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[16] VSSd out_1[16] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[17] VSSd out_1[17] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[18] VSSd out_1[18] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[19] VSSd out_1[19] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbot[20] VSSd OUT_bot_d VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[1] VSSd out_2[1] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[2] VSSd out_2[2] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[3] VSSd out_2[3] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[4] VSSd out_2[4] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[5] VSSd out_2[5] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[6] VSSd out_2[6] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[7] VSSd out_2[7] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[8] VSSd out_2[8] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[9] VSSd out_2[9] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[10] VSSd out_2[10] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[11] VSSd out_2[11] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[12] VSSd out_2[12] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[13] VSSd out_2[13] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[14] VSSd out_2[14] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[15] VSSd out_2[15] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[16] VSSd out_2[16] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[17] VSSd out_2[17] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[18] VSSd out_2[18] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[19] VSSd out_2[19] VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptop[20] VSSd OUT_top_d VSSd VSSd nfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[1] VDDd out_1[1] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[2] VDDd out_1[2] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[3] VDDd out_1[3] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[4] VDDd out_1[4] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[5] VDDd out_1[5] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[6] VDDd out_1[6] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[7] VDDd out_1[7] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[8] VDDd out_1[8] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[9] VDDd out_1[9] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[10] VDDd out_1[10] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[11] VDDd out_1[11] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[12] VDDd out_1[12] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[13] VDDd out_1[13] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[14] VDDd out_1[14] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[15] VDDd out_1[15] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[16] VDDd out_1[16] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[17] VDDd out_1[17] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[18] VDDd out_1[18] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[19] VDDd out_1[19] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcapbotp[20] VDDd OUT_bot_d VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[1] VDDd out_2[1] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[2] VDDd out_2[2] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[3] VDDd out_2[3] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[4] VDDd out_2[4] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[5] VDDd out_2[5] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[6] VDDd out_2[6] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[7] VDDd out_2[7] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[8] VDDd out_2[8] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[9] VDDd out_2[9] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[10] VDDd out_2[10] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[11] VDDd out_2[11] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[12] VDDd out_2[12] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[13] VDDd out_2[13] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[14] VDDd out_2[14] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[15] VDDd out_2[15] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[16] VDDd out_2[16] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[17] VDDd out_2[17] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[18] VDDd out_2[18] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[19] VDDd out_2[19] VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+XMcaptopp[20] VDDd OUT_top_d VDDd VDDd pfet_06v0 L=1u W=25u nf=5 m=1
+.ends
