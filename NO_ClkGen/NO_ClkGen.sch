@@ -96,7 +96,7 @@ C {lab_wire.sym} 910 110 0 0 {name=p8 sig_type=std_logic lab=out_1[1:19],OUT_bot
 C {lab_wire.sym} 620 110 0 0 {name=p16 sig_type=std_logic lab=in_d_1,out_1[1:19]}
 C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 681.25 110 0 0 {name=xinv2[1:20] VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 440 110 0 0 {name=p17 sig_type=std_logic lab=in_d_1}
-C {symbols/nfet_03v3.sym} 880 200 1 0 {name=Mcapbot[1:20]
+C {symbols/nfet_06v0.sym} 880 200 1 0 {name=Mcapbot[1:20]
 L=1u
 W=25u
 nf=5
@@ -107,12 +107,12 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_03v3
+model=nfet_06v0
 spiceprefix=X
 }
 C {lab_wire.sym} 15 130 0 0 {name=p18 sig_type=std_logic lab=CLKbuf}
 C {lab_wire.sym} 1035 300 0 0 {name=p19 sig_type=std_logic lab=VSSd}
-C {symbols/nfet_03v3.sym} 1080 200 1 0 {name=Mcaptop[1:20]
+C {symbols/nfet_06v0.sym} 1080 200 1 0 {name=Mcaptop[1:20]
 L=1u
 W=25u
 nf=5
@@ -123,10 +123,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_03v3
+model=nfet_06v0
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 750 210 1 0 {name=Mcapbotp[1:20]
+C {symbols/pfet_06v0.sym} 750 210 1 0 {name=Mcapbotp[1:20]
 L=1u
 W=25u
 nf=5
@@ -137,11 +137,11 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_06v0
 spiceprefix=X
 }
 C {lab_wire.sym} 725 300 0 0 {name=p20 sig_type=std_logic lab=VDDd}
-C {symbols/pfet_03v3.sym} 1260 210 1 0 {name=Mcaptopp[1:20]
+C {symbols/pfet_06v0.sym} 1260 210 1 0 {name=Mcaptopp[1:20]
 L=1u
 W=25u
 nf=5
@@ -152,7 +152,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_06v0
 spiceprefix=X
 }
 C {lab_wire.sym} 1235 300 0 0 {name=p21 sig_type=std_logic lab=VDDd}
