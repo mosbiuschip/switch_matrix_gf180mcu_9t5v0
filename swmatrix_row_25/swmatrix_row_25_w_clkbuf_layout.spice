@@ -91,7 +91,7 @@ X4 a_94_0# a_30_1660# a_n84_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=4.88p ps=17.
 X5 a_414_0# a_350_1660# a_254_0# VSUBS nfet_03v3 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.28u
 .ends
 
-.subckt swmatrix_Tgate VDDd T1 T2 enable VSSd control
+.subckt swmatrix_Tgate VDDd control T1 T2 enable VSSd
 Xpfet_0 T1 T1 T2 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
 + gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1
 + gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
@@ -235,31 +235,31 @@ Xgf180mcu_fd_sc_mcu9t5v0__inv_20_1 gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I VDDd VSSd
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
 Xgf180mcu_fd_sc_mcu9t5v0__inv_20_2 gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I VDDd VSSd ShiftReg_row_25_0/PHI_1
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
-Xswmatrix_Tgate_0[0] VDDd pin BUS[25] swmatrix_Tgate_0[9]/enable VSSd D_out swmatrix_Tgate
-Xswmatrix_Tgate_0[1] VDDd pin BUS[24] swmatrix_Tgate_0[9]/enable VSSd Q[24] swmatrix_Tgate
-Xswmatrix_Tgate_0[2] VDDd pin BUS[23] swmatrix_Tgate_0[9]/enable VSSd Q[23] swmatrix_Tgate
-Xswmatrix_Tgate_0[3] VDDd pin BUS[22] swmatrix_Tgate_0[9]/enable VSSd Q[22] swmatrix_Tgate
-Xswmatrix_Tgate_0[4] VDDd pin BUS[21] swmatrix_Tgate_0[9]/enable VSSd Q[21] swmatrix_Tgate
-Xswmatrix_Tgate_0[5] VDDd pin BUS[20] swmatrix_Tgate_0[9]/enable VSSd Q[20] swmatrix_Tgate
-Xswmatrix_Tgate_0[6] VDDd pin BUS[19] swmatrix_Tgate_0[9]/enable VSSd Q[19] swmatrix_Tgate
-Xswmatrix_Tgate_0[7] VDDd pin BUS[18] swmatrix_Tgate_0[9]/enable VSSd Q[18] swmatrix_Tgate
-Xswmatrix_Tgate_0[8] VDDd pin BUS[17] swmatrix_Tgate_0[9]/enable VSSd Q[17] swmatrix_Tgate
-Xswmatrix_Tgate_0[9] VDDd pin BUS[16] swmatrix_Tgate_0[9]/enable VSSd Q[16] swmatrix_Tgate
-Xswmatrix_Tgate_0[10] VDDd pin BUS[15] swmatrix_Tgate_0[9]/enable VSSd Q[15] swmatrix_Tgate
-Xswmatrix_Tgate_0[11] VDDd pin BUS[14] swmatrix_Tgate_0[9]/enable VSSd Q[14] swmatrix_Tgate
-Xswmatrix_Tgate_0[12] VDDd pin BUS[13] swmatrix_Tgate_0[9]/enable VSSd Q[13] swmatrix_Tgate
-Xswmatrix_Tgate_0[13] VDDd pin BUS[12] swmatrix_Tgate_0[9]/enable VSSd Q[12] swmatrix_Tgate
-Xswmatrix_Tgate_0[14] VDDd pin BUS[11] swmatrix_Tgate_0[9]/enable VSSd Q[11] swmatrix_Tgate
-Xswmatrix_Tgate_0[15] VDDd pin BUS[10] swmatrix_Tgate_0[9]/enable VSSd Q[10] swmatrix_Tgate
-Xswmatrix_Tgate_0[16] VDDd pin BUS[9] swmatrix_Tgate_0[9]/enable VSSd Q[9] swmatrix_Tgate
-Xswmatrix_Tgate_0[17] VDDd pin BUS[8] swmatrix_Tgate_0[9]/enable VSSd Q[8] swmatrix_Tgate
-Xswmatrix_Tgate_0[18] VDDd pin BUS[7] swmatrix_Tgate_0[9]/enable VSSd Q[7] swmatrix_Tgate
-Xswmatrix_Tgate_0[19] VDDd pin BUS[6] swmatrix_Tgate_0[9]/enable VSSd Q[6] swmatrix_Tgate
-Xswmatrix_Tgate_0[20] VDDd pin BUS[5] swmatrix_Tgate_0[9]/enable VSSd Q[5] swmatrix_Tgate
-Xswmatrix_Tgate_0[21] VDDd pin BUS[4] swmatrix_Tgate_0[9]/enable VSSd Q[4] swmatrix_Tgate
-Xswmatrix_Tgate_0[22] VDDd pin BUS[3] swmatrix_Tgate_0[9]/enable VSSd Q[3] swmatrix_Tgate
-Xswmatrix_Tgate_0[23] VDDd pin BUS[2] swmatrix_Tgate_0[9]/enable VSSd Q[2] swmatrix_Tgate
-Xswmatrix_Tgate_0[24] VDDd pin BUS[1] swmatrix_Tgate_0[9]/enable VSSd Q[1] swmatrix_Tgate
+Xswmatrix_Tgate_0[0] VDDd D_out pin BUS[25] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[1] VDDd Q[24] pin BUS[24] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[2] VDDd Q[23] pin BUS[23] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[3] VDDd Q[22] pin BUS[22] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[4] VDDd Q[21] pin BUS[21] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[5] VDDd Q[20] pin BUS[20] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[6] VDDd Q[19] pin BUS[19] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[7] VDDd Q[18] pin BUS[18] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[8] VDDd Q[17] pin BUS[17] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[9] VDDd Q[16] pin BUS[16] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[10] VDDd Q[15] pin BUS[15] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[11] VDDd Q[14] pin BUS[14] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[12] VDDd Q[13] pin BUS[13] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[13] VDDd Q[12] pin BUS[12] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[14] VDDd Q[11] pin BUS[11] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[15] VDDd Q[10] pin BUS[10] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[16] VDDd Q[9] pin BUS[9] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[17] VDDd Q[8] pin BUS[8] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[18] VDDd Q[7] pin BUS[7] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[19] VDDd Q[6] pin BUS[6] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[20] VDDd Q[5] pin BUS[5] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[21] VDDd Q[4] pin BUS[4] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[22] VDDd Q[3] pin BUS[3] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[23] VDDd Q[2] pin BUS[2] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
+Xswmatrix_Tgate_0[24] VDDd Q[1] pin BUS[1] swmatrix_Tgate_0[9]/enable VSSd swmatrix_Tgate
 Xgf180mcu_fd_sc_mcu9t5v0__inv_8_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
 Xgf180mcu_fd_sc_mcu9t5v0__inv_8_1 gf180mcu_fd_sc_mcu9t5v0__inv_8_1/I VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_1/ZN
