@@ -229,11 +229,11 @@ X23 VSS I ZN VPW nfet_05v0 ad=0.3432p pd=1.84u as=0.3432p ps=1.84u w=1.32u l=0.6
 + BUS[12] BUS[11] BUS[10] BUS[9] BUS[8] BUS[7] BUS[6] BUS[5] BUS[4] BUS[3] BUS[2]
 + BUS[1] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] Q[11] Q[12] Q[13] Q[14] Q[15] Q[16]
 + Q[17] Q[18] Q[19] Q[20] Q[21] Q[22] Q[23] Q[24] D_out pin Q[1] Q[2] D_in
-Xgf180mcu_fd_sc_mcu9t5v0__inv_20_0 gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I VDDd VSSd swmatrix_Tgate_0[9]/enable
+Xgf180mcu_fd_sc_mcu9t5v0__inv_20_0 gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I VDDd VSSd ShiftReg_row_25_0/PHI_1
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
 Xgf180mcu_fd_sc_mcu9t5v0__inv_20_1 gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I VDDd VSSd ShiftReg_row_25_0/PHI_2
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
-Xgf180mcu_fd_sc_mcu9t5v0__inv_20_2 gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I VDDd VSSd ShiftReg_row_25_0/PHI_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_20_2 gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I VDDd VSSd swmatrix_Tgate_0[9]/enable
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20
 Xswmatrix_Tgate_0[0] VDDd D_out swmatrix_Tgate_0[9]/enable pin BUS[25] VSSd swmatrix_Tgate
 Xswmatrix_Tgate_0[1] VDDd Q[24] swmatrix_Tgate_0[9]/enable pin BUS[24] VSSd swmatrix_Tgate
@@ -275,11 +275,11 @@ Xgf180mcu_fd_sc_mcu9t5v0__inv_4_1 PHI_2 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
 Xgf180mcu_fd_sc_mcu9t5v0__inv_4_2 PHI_1 VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_8_2/I
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_4
-Xgf180mcu_fd_sc_mcu9t5v0__inv_12_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I
+Xgf180mcu_fd_sc_mcu9t5v0__inv_12_0 gf180mcu_fd_sc_mcu9t5v0__inv_8_0/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
 Xgf180mcu_fd_sc_mcu9t5v0__inv_12_1 gf180mcu_fd_sc_mcu9t5v0__inv_8_1/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_1/I
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
-Xgf180mcu_fd_sc_mcu9t5v0__inv_12_2 gf180mcu_fd_sc_mcu9t5v0__inv_8_2/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_2/I
+Xgf180mcu_fd_sc_mcu9t5v0__inv_12_2 gf180mcu_fd_sc_mcu9t5v0__inv_8_2/ZN VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_20_0/I
 + VDDd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_12
 .ends
 
