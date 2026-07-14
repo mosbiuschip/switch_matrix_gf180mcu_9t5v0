@@ -115,9 +115,13 @@ C {netlist.sym} -817.5 167.5 0 0 {name=s1 value="
 * clock
 abit [ bit_node ]  input_vector
 .model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
+*inside of the spikcore submodule testpath
+*.model input_vector d_source(input_file=\\"/foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
 * data
 aclock [ clock_node ] clock_vector
 .model clock_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
+*inside of the spikcore submodule testpath
+*.model input_vector d_source(input_file=\\"/foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
 * convert digital signals to analog
 aconvert [ bit_node clock_node ] [ data clock ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
